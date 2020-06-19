@@ -180,9 +180,12 @@
     justify-content: space-between;
 }
 
+.apartments__main {
+    max-width: 685px;
+}
+
 .title__main {
     display: flex;
-    padding-right: 45px;
     line-height: 96;
 }
 
@@ -219,45 +222,339 @@
 }
 
 .title__main form label {
-    padding: 13px 18px 13px 24px;
+    padding: 13px 5px 13px 57px;
 }
-.save__info .card-bottom{
+
+.save__info .card-bottom {
     background-color: #ffffff;
     border: 2px solid #EEF3F9;
     border-radius: 4px;
     margin-bottom: 6px;
+    position: relative;
 }
 
+/*like-btn-start*/
 .like-btn {
+    position: absolute;
     display: flex;
     align-self: flex-end;
+    align-items: flex-start;
     Cursor: pointer;
-    position: relative;
-    top: 0;
-    right:0;
+    top: 14px;
+    right: 3px;
     background-image: url(/img/like__no-active.png);
-    background-position: center;
-    width: 17px;
-    height: 14px;
+    background-position: left;
+    width: 125px;
+    height: 17px;
     background-repeat: no-repeat;
 }
 
-.is-active {
-    animation-name: animate;
-    animation-duration: .8s;
-    animation-iteration-count: 1;
-    animation-timing-function: steps(28);
-    animation-fill-mode: forwards;
+.like-btn:hover {
+    background: url(/img/like__hover.png) no-repeat;
+    top: 16px;
+}
+
+.like-btn.active {
     background-image: url(/img/like__active.png);
+}
+
+.like-btn.block {
+    background-image: url(/img/like__no-active.png);
+}
+
+.like-btn.active.block {
+    background-image: url(/img/like__active.png);
+}
+
+/*like-btn-end */
+.characteristics {
+    margin-bottom: 45px;
+    padding-bottom: 41px;
+    border-bottom: 2px solid #EAF2FA;
+}
+
+.characteristics h3,
+.sleepingplaces h3,
+.facilities h3,
+.description__text h3 {
+    font-family: Gilroy;
+    font-size: 17px;
+    margin-bottom: 37px;
+    text-transform: uppercase;
+    color: #124570;
+}
+
+.characteristics__items {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    position: relative;
+    left: 9px;
+}
+
+.characteristics__left {
+    display: flex;
+    flex-direction: column;
+    width: 65.666%;
+    justify-content: space-between;
+}
+
+.characteristics__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.characteristics__right {
+    flex-direction: column;
+}
+
+.characteristics__item {
+    max-width: 206px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-self: baseline;
+    margin-bottom: 40px;
+}
+
+.characteristics__item span {
+    position: relative;
+}
+
+.characteristics__item span::before {
+    position: absolute;
+    content: url(/img/bg_characteristics.png);
+    top: -20px;
+    left: -10px;
+    z-index: 4;
+    border-radius: 4px;
+}
+
+.characteristics__item img {
+    margin-right: 31px;
+    z-index: 5;
+
+}
+
+.sleepingplaces {
+    padding-bottom: 50px;
+    margin-bottom: 41px;
+    border-bottom: 2px solid #EAF2FA;
+}
+
+.sleepingplaces__items {
+    display: flex;
+    flex-direction: row;
+}
+
+.sleepingplaces__item {
+    max-width: 195px;
+    width: 100%;
+    background-color: #EEF3F9;
+    border-radius: 4px;
+    padding: 25.63px 5px 45px 23.54px;
+}
+
+.sleepingplaces__item:first-child {
+    margin-right: 28px;
+}
+
+.sleepingplaces__item h4 {
+    font-family: Gilroy;
+    letter-spacing: 0.02em;
+    color: #124570;
+    margin-bottom: 10px;
+}
+
+.sleepingplaces__item div {
+    display: flex;
+}
+
+.sleepingplaces__item div img {
+    margin-bottom: 21px;
+    margin-right: 15.56px;
+}
+
+/* drop_down1-start */
+.description__text {
+    border-bottom: 2px solid #EAF2FA;
+}
+
+.container__description h4,
+.container__description a,
+.container__description p {
+
+    text-align: left;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #50575E;
 }
 
 
 
+.accordion dl:after,
+.accordion-list:after {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+}
 
 
+.accordion {
+    position: relative;
+}
 
 
+.accordionTitle,
+.accordion__Heading {
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+}
 
+.accordionTitle:before {
+    position: absolute;
+    content: url(/img/arrow-down.svg);
+    top: 0px;
+    left: 138px;
+    float: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+    transform: rotate(-180deg);
+}
+
+.accordionItem {
+    padding-top: 13px;
+    height: auto;
+    overflow: hidden;
+    max-height: 50em;
+    transition: max-height 1s;
+}
+
+@media screen and (min-width: 48em) {
+    .accordionItem {
+        transition: max-height 0.8s;
+    }
+}
+
+.accordionItem.is-collapsed {
+    max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+    max-height: auto;
+}
+
+.animateIn {
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+        transform-origin: 50% 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes accordionOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+    }
+}
+
+/* drop_down1-end */
+.facilities {
+    margin-top: 41px;
+}
+
+.facilities__items {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.facilities__items .facilities__item:first-child {
+    width: 16.333%;
+}
+
+.facilities__items .facilities__item:nth-child(2) {
+    width: 21.333%;
+}
+
+.facilities__items .facilities__item:last-child {
+    width: 23.655%;
+}
+
+.facilities__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10px;
+}
+
+.facilities__item div {
+    display: flex;
+    align-items: center;
+}
+
+.facilities__item div:first-child {
+    margin-bottom: 40px;
+}
+
+.facilities__item div img {
+    margin-right: 30px;
+    z-index: 5;
+}
+
+.facilities__item span {
+    position: relative;
+}
+
+.facilities__item span::before {
+    position: absolute;
+    content: url(/img/bg_facilities.png);
+    top: -26px;
+    left: -12px;
+    z-index: 4;
+    border-radius: 4px;
+}
+
+.facilities .facilities__items-accordion {
+    margin-top: 12px;
+}
+
+.facilities .accordionTitle-facilities::before {
+    left: 166px;
+}
 
 
 
