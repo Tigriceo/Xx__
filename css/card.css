@@ -10,6 +10,9 @@
 .container__info {
     max-width: 1128px;
     margin: 0 auto;
+    font-family: Gilroy;
+    font-style: normal;
+    letter-spacing: 0.02em;
 }
 
 .top__gallery {
@@ -279,7 +282,11 @@
 .description__text h3,
 .rememberthis h3,
 .home__rules a,
-.home__rules h3 {
+.home__rules h3,
+.coordinates a,
+.coordinates h3,
+.calendar h3 {
+    text-align: left;
     font-family: Gilroy;
     font-size: 17px;
     margin-bottom: 37px;
@@ -662,13 +669,16 @@
     position: relative;
     left: 27px;
 }
-.home__rules.cancellation__policy{
+
+.home__rules.cancellation__policy {
     margin-top: 50px;
 }
+
 .home__rules.cancellation__policy .accordion {
     padding-bottom: 10px;
 }
-.home__rules.cancellation__policy .accordion h3{
+
+.home__rules.cancellation__policy .accordion h3 {
     margin-bottom: 30px;
     line-height: 0;
 }
@@ -676,7 +686,8 @@
 .cancellation__policy p {
     line-height: 26px;
 }
-.cancellation__policy .facilities__items{
+
+.cancellation__policy .facilities__items {
     margin-bottom: 0;
 }
 
@@ -685,23 +696,98 @@
         padding-bottom: 45px;
     }
 
-    .home__rules .accordion a {
+    .home__rules .accordion a,
+    .coordinates .accordion a {
         display: none;
     }
 
-    .home__rules .accordion .accordionItem {
+    .home__rules .accordion .accordionItem,
+    .coordinates .accordion .accordionItem {
         overflow: visible;
+    }
+
+    .coordinates .accordionItem.is-collapsed {
+        max-height: 100%;
+    }
+    .coordinates .accordion dl:after,
+    .coordinates .accordion-list:after {
+        content: "";
+        display: block;
+        height: 0;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .home__rules .accordion h3 {
+
+    .home__rules .accordion h3,
+    .coordinates .accordion h3 {
         display: none;
     }
 }
 
+.map__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    font-family: Gilroy;
+    font-size: 15px;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    color: #124570;
+}
+
+.map__title img {
+    margin-right: 21px;
+}
+
+.map__item {
+    margin-bottom: 28px;
+}
+
+.coordinates {
+    padding-bottom: 41px;
+    margin-bottom: 41px;
+    border-bottom: 2px solid #EAF2FA;
+}
+.coordinates .main__map {
+    margin-bottom: -39px;
+}
 
 
+.coordinates .accordion .facilities__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.coordinates .list__coordinates h5 {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    margin: 20px 0 10px;
+}
+
+.list__coordinates li {
+    position: relative;
+    font-size: 16px;
+    margin-left: 27px;
+}
+
+.list__coordinates li::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #124570;
+    border-radius: 1px;
+    left: -27px;
+    top: 5px;
+}
+
+.coordinates .list__coordinates.list__two li {
+    margin-bottom: 11px;
+}
 
 
 
