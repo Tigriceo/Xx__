@@ -6,6 +6,10 @@
     <title>card</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=400, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="fullcalendar/packages/core/main.css">
+    <link rel="stylesheet" href="fullcalendar/packages/daygrid/main.css">
+    <link rel="stylesheet" href="fullcalendar/packages/timegrid/main.css">
+    <link rel="stylesheet" href="css/calenadar.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/daterangepicker.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -94,10 +98,6 @@
 
 
                 </div>
-
-
-
-
 
 
                 <!-- данные__заказа__модальное_окно-начало -->
@@ -540,11 +540,326 @@
                             <h3>Доступность</h3>
                             <div class="calendar__item">
 
+                                <form class="calendar__full" action="/">
+                                    <div id='calendar'></div>
+                                </form>
+
                             </div>
 
 
 
                         </div>
+
+                        <div class="reviews">
+                            <div class="reviews__title">
+                                <h3>Отзывы</h3>
+                                <div>
+                                    <img class="img-star" src="img/star.png" alt="">
+                                    <p>5.0 <span>(98 отзывов)</span></p>
+                                </div>
+                            </div>
+                            <div class="progressbar">
+                                <div class="progressbar__items">
+
+                                    <div class="left__block">
+
+                                        <div class="left__block-item">
+                                            <h5>Общение</h5>
+                                            <div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 100%">
+                                                    </div>
+                                                </div>
+                                                <span>5,0</span>
+                                            </div>
+                                        </div>
+                                        <div class="left__block-item">
+                                            <h5>Прибытие</h5>
+                                            <div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 100%">
+                                                    </div>
+                                                </div>
+                                                <span>5,0</span>
+                                            </div>
+                                        </div>
+                                        <div class="left__block-item">
+                                            <h5>Чистота</h5>
+                                            <div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 100%">
+                                                    </div>
+                                                </div>
+                                                <span>5,0</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="left__block right__block">
+
+                                        <div class="left__block-item">
+                                            <h5>Точность</h5>
+                                            <div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 92%">
+                                                    </div>
+                                                </div>
+                                                <span>4,9</span>
+                                            </div>
+                                        </div>
+                                        <div class="left__block-item">
+                                            <h5>Местоположение</h5>
+                                            <div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 100%">
+                                                    </div>
+                                                </div>
+                                                <span>5,0</span>
+                                            </div>
+                                        </div>
+                                        <div class="left__block-item">
+                                            <h5>Цена/качество</h5>
+                                            <div>
+                                                <div class="progress progress-striped">
+                                                    <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                        style="width: 100%">
+                                                    </div>
+                                                </div>
+                                                <span>5,0</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="description__text description__text-first">
+                                <div class="avatar">
+                                    <img class="client__photo" src="img/ava.png" alt="avatar">
+                                    <div class="name__client">
+                                        <h6>Марина</h6>
+                                        <div>
+                                            <span>май</span>
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container__description">
+                                    <h4>В Баку для своего отдыха нашла это предложение с прекрасными видом и большими
+                                        панорамными окнами! Мы были и остались в восторге от неё! Современный стильный
+                                        интерьер, продуманные детали и аксессуары...</h4>
+                                    <div class="accordion">
+                                        <dl>
+                                            <dt>
+                                                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1"
+                                                    class="accordion-title accordionTitle js-accordionTrigger">Читать
+                                                    полностью</a>
+                                            </dt>
+                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                                aria-hidden="true">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+                                                    interdum diam. Donec interdum porttitor risus non bibendum. Maecenas
+                                                    sollicitudin eros in quam imperdiet placerat. Cras justo purus,
+                                                    rhoncus
+                                                    nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit
+                                                    faucibus condimentum. Donec facilisis consectetur enim sit amet
+                                                    varius.
+                                                    Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
+                                                </p>
+
+                                            </dd>
+
+                                        </dl>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="description__text">
+                                <div class="avatar">
+                                    <img class="client__photo" src="img/ava.png" alt="avatar">
+                                    <div class="name__client">
+                                        <h6>Марина</h6>
+                                        <div>
+                                            <span>май</span>
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container__description">
+                                    <h4>В Баку для своего отдыха нашла это предложение с прекрасными видом и большими
+                                        панорамными окнами! Мы были и остались в восторге от неё! Современный стильный
+                                        интерьер, продуманные детали и аксессуары...</h4>
+                                    <div class="accordion">
+                                        <dl>
+                                            <dt>
+                                                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1"
+                                                    class="accordion-title accordionTitle js-accordionTrigger">Читать
+                                                    полностью</a>
+                                            </dt>
+                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                                aria-hidden="true">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+                                                    interdum diam. Donec interdum porttitor risus non bibendum. Maecenas
+                                                    sollicitudin eros in quam imperdiet placerat. Cras justo purus,
+                                                    rhoncus
+                                                    nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit
+                                                    faucibus condimentum. Donec facilisis consectetur enim sit amet
+                                                    varius.
+                                                    Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
+                                                </p>
+
+                                            </dd>
+
+                                        </dl>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="description__text description__text-last">
+                                <div class="avatar">
+                                    <img class="client__photo" src="img/ava.png" alt="avatar">
+                                    <div class="name__client">
+                                        <h6>Марина</h6>
+                                        <div>
+                                            <span>май</span>
+                                            <span>2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container__description">
+                                    <h4>В Баку для своего отдыха нашла это предложение с прекрасными видом и большими
+                                        панорамными окнами! Мы были и остались в восторге от неё! Современный стильный
+                                        интерьер, продуманные детали и аксессуары...</h4>
+                                    <div class="accordion">
+                                        <dl>
+                                            <dt>
+                                                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1"
+                                                    class="accordion-title accordionTitle js-accordionTrigger">Читать
+                                                    полностью</a>
+                                            </dt>
+                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                                aria-hidden="true">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+                                                    interdum diam. Donec interdum porttitor risus non bibendum. Maecenas
+                                                    sollicitudin eros in quam imperdiet placerat. Cras justo purus,
+                                                    rhoncus
+                                                    nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit
+                                                    faucibus condimentum. Donec facilisis consectetur enim sit amet
+                                                    varius.
+                                                    Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
+                                                </p>
+
+                                            </dd>
+
+                                        </dl>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="show__oll-reviews">
+                                <a href="#">Показать все отзывы</a>
+                            </div>
+
+                            <nav aria-label="navigation">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-prev page-arrow" href="#"></a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link active" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                    <li class="page-item"><a class="page-next page-arrow" href="#"></a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+
+                        <div class="about__master">
+                            <h3>ХОЗЯИН sinan</h3>
+                            <div class="about__master-items">
+                                <div class="about__master-img">
+                                    <img src="img/master.png" alt="master">
+                                    <div class="master__status">
+                                        <p>Опытный владелец</p>
+                                        <span class="question">
+                                            <span class="tooltip">Опытные хозяины с отличными отзывами, которые делают
+                                                всё для комфорта гостей</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="about__master-item">
+                                    <div class="block">
+                                        <img src="img/feedback.png" alt="feedback">
+                                        <span>73 отзыва</span>
+                                    </div>
+                                    <div class="block">
+                                        <img src="img/location.png" alt="location">
+                                        <span>Баку, Азербайджан</span>
+                                    </div>
+                                </div>
+                                <div class="about__master-item">
+                                    <div class="block">
+                                        <img src="img/cheked.png" alt="cheked">
+                                        <span>Проверен</span>
+                                    </div>
+                                    <div class="block">
+                                        <img src="img/reg_in.png" alt="reg_in">
+                                        <span>На сайте с январь 2014 г.</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="some__text">
+                                <p>Im Sinan, studied in Tourism Management at University of Surrey. My hobbies are:
+                                    Football, Basketball, Collecting pins and Traveling.</p>
+                            </div>
+
+                            <div class="master__skills">
+                                <div class="master__skills-main">
+                                    <p>Языки: <span>English, Русский, Türkçe</span></p>
+                                    <p>Частота ответов: <span>100%</span></p>
+                                    <p>Время ответа: <span>в течение часа</span></p>
+                                </div>
+                                <div class="master__skills-text">
+                                    <p>Опытный владелец</p>
+                                    <span>Опытные хозяины с отличными отзывами, которые делают всё для комфорта
+                                        гостей</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="similaroffers">
+                            <h2>Похожие предложения</h2>
+                           
+                        </div>
+
 
                     </div>
 
@@ -1054,7 +1369,14 @@
         </div>
     </div>
 
-
+    <script src="fullcalendar/vendor/rrule.js"></script>
+    <script src="fullcalendar/packages/core/main.js"></script>
+    <script src="fullcalendar/packages/interaction/main.js"></script>
+    <script src="fullcalendar/packages/daygrid/main.js"></script>
+    <script src="fullcalendar/packages/timegrid/main.js"></script>
+    <script src="fullcalendar/packages/interaction/main.js"></script>
+    <script src="fullcalendar/packages/list/main.js"></script>
+    <script src="fullcalendar/packages/core/locales/ru.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.inputmask.bundle.js"></script>

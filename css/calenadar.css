@@ -1,0 +1,105 @@
+/* WHEN THE BROWSER WINDOW IS 579PX WIDE OR LESS */
+@media all and (max-width: 579px) {
+    /* 	fc-left fc-toolbar fc-header-toolbar */
+
+    /* 	.fc-event{
+		display: none !important;
+	background-color: blue;
+	} */
+
+    /* 
+ .fc-toolbar h2 {
+  white-space: nowrap;
+  font-size: 5vw;
+  margin: 0;
+ }
+	 */
+
+    .fc-toolbar {
+        background-color: cyan !important;
+        display: flex !important;
+        flex-flow: row wrap !important;
+    }
+
+    .fc-left {
+        background-color: purple !important;
+        width: 100% !important;
+        order: 1 !important;
+    }
+
+
+    .fc-right {
+        /*   white-space: nowrap; */
+        background-color: orange !important;
+        display: none !important;
+
+        width: 100% !important;
+        order: 2 !important;
+
+    }
+
+    .fc-center {
+        width: 100% !important;
+        text-transform: uppercase !important;
+        order: 3 !important;
+    }
+}
+
+
+
+#calendar {
+    max-width: 332px;
+    /* margin: 40px auto; */
+    background: #FCFDFF;
+    border: 2px solid #EEF3F9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.fc-event {
+    /* event pointer hover; */
+    cursor: pointer !important;
+
+    border-radius: 0 !important;
+    /* border: none !important; */
+    /*text-align: left;*/
+    /*margin: 1px 0 0 !important;*/
+    /*padding: 2px !important;*/
+
+    /*background:#212531 !important;*/
+    /*background: linear-gradient(to right bottom, #ff0000 50%, #ff00ff 50%)  !important;*/
+
+    /*background:linear-gradient(30deg, #013A6B 50%, #004E95 50%) !important;*/
+    /*margin: 1px -1px 0 !important;*/
+    /*font-size: 13px !important;*/
+}
+.fc th,
+.fc td {
+    border-style: none;
+    border-width: 0px;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+}
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+    float: none;
+    position: relative;
+    top: 15px;
+}
+.fc-toolbar.fc-header-toolbar{
+    margin-bottom: 22px;
+}
+
+.fc-dayGrid-view .fc-body .fc-row {
+    min-height: 20px;
+    max-height: 42.9px
+}
+
+.fc-scroller {
+    max-height: 257px;
+}
+.fc-highlight {
+    background-color: #124570;
+    opacity: 0.5;
+    border-radius: 3px;
+}
