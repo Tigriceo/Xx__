@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         locale: "ru",
         selectable: true,
         height: 450,
-        
+
 
 
         // plugins: ["interaction", "dayGrid", "timeGrid"],
@@ -189,28 +189,6 @@ $('.like-btn').on('mouseout', function () {
 });
 // like__btn
 
-// var button = document.querySelector("btn-text");
-// button.onclick = function() {
-//        document.querySelector(".xpandable-blockw").classList.toggle('opened');
-//         return false;
-//     };
-// $(document).ready(function () {
-//     $('.btn-text').click(function (event) {
-//         $('.xpandable-block').toggleClass('opened') ;
-//     });
-// });
-
-
-
-
-
-/* drop_down1-start */
-
-
-
-
-
-/* drop_down1-end */
 //uses classList, setAttribute, and querySelectorAll
 //if you want this to work in IE8/9 youll need to polyfill these
 (function () {
@@ -301,6 +279,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // галерея__модальное__окно
 
+//slick__slider-начала
 $(document).ready(function () {
     $('.slider').slick({
         arrows: true,
@@ -312,7 +291,7 @@ $(document).ready(function () {
         responsive: [{
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 1
                 }
             },
             {
@@ -324,3 +303,17 @@ $(document).ready(function () {
         ]
     });
 });
+
+
+//адаптив__к_мобильной__версии__слайдера-начало
+$(document).ready(function () {
+    var w = $(window).width(); // Получаем ширину окна
+    if (w <= 600) { // Если ширина окна меньше, либо равна 600
+        $('.modal-dialog').height($('.modal-dialog').width() / 1.5); // Копируем содержимое правой колонки в левую
+        $(window).resize(function () {
+            $('.modal-dialog').height($('.modal-dialog').width() / 1.5);
+        });
+    }
+});
+//адаптив__к_мобильной__версии__слайдера-конец
+//slick__slider-конец
