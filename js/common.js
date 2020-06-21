@@ -2,10 +2,11 @@ $(document).ready(function () {
 
     $("body, html").click(function () {
         $(".dropdown").removeClass('active');
+        $(".dropdown__first").removeClass('active');
     });
 
     //stopPropagation
-    $(".dropdown, .popup").click( function (e) {
+    $(".dropdown, .popup, .dropdown__first").click(function (e) {
         e.stopPropagation();
     });
 
@@ -31,6 +32,10 @@ $(document).ready(function () {
         e.stopPropagation();
         $(".dropdown").addClass('active');
     });
+     $(".search-result__item-drop").click(function (e) {
+         e.stopPropagation();
+         $(".dropdown__first").addClass('active');
+     });
 
     $(".count-minus").click(function () {
         let $input = $(this).parent().find("input");

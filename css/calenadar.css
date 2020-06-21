@@ -55,6 +55,14 @@
     box-sizing: border-box;
     border-radius: 4px;
 }
+#calendar__second {
+    max-width: 332px;
+    /* margin: 40px auto; */
+    background: #FCFDFF;
+    border: 2px solid #EEF3F9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
 
 .fc-event {
     /* event pointer hover; */

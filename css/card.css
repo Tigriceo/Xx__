@@ -10,6 +10,7 @@
 .container__info {
     max-width: 1128px;
     margin: 0 auto;
+    padding-bottom: 100px;
     font-family: Gilroy;
     font-style: normal;
     letter-spacing: 0.02em;
@@ -945,7 +946,6 @@
 .about__master {
     padding-bottom: 49px;
     border-bottom: 2px solid #EAF2FA;
-    margin-bottom: 73px;
 }
 
 .about__master-items {
@@ -1047,7 +1047,172 @@
 
 
 
+.similaroffers h2 {
+    font-family: Merriweather;
+    font-size: 36px;
+    color: #292C31;
+    line-height: 64px;
+    margin: 73px 0 35px;
+}
 
+.similaroffers__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.similaroffers__item {
+    max-width: 365px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item__img {
+    position: relative;
+}
+
+.item__img img {
+    max-width: 362px;
+}
+
+.place__photo {
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.item__img-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.item__img-text a,
+.item__img-text p {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.item__img-text span {
+    color: #898989;
+}
+
+.reviews__block {
+    display: flex;
+    align-items: center;
+}
+
+.reviews__block img {
+    margin-right: 10px;
+}
+
+.similaroffers__item {
+    background-color: #FCFDFF;
+}
+
+.similaroffers__item h3 {
+    padding: 13.5px 20px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #124570;
+}
+
+.place__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+.place__item,
+.price__item {
+    display: flex;
+    align-items: center;
+}
+
+.place__item img {
+    margin-right: 8px;
+}
+
+.place__item p {
+    max-width: 158px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #50575E
+}
+
+.price__item {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #FF3535;
+}
+
+.price__item .old__price {
+    font-size: 18px;
+    color: #979798;
+    margin-right: 8px;
+    text-decoration: line-through;
+}
+
+.reservation__btn {
+    position: relative;
+    background-color: #EEF3F9;
+    border-radius: 0px 0px 4px 4px;
+    padding: 15px 20px;
+}
+
+.reservation__btn h4 {
+    position: relative;
+    text-align: left;
+    margin-left: 23px;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: #124570;
+}
+
+.reservation__btn h4::before {
+    position: absolute;
+    content: url(/img/lightning.svg);
+    top: 0;
+    left: -18px;
+    width: 16px;
+    height: 16px;
+}
+
+.reservation__btn .like-btn {
+    width: 40px;
+    background-position: center;
+    right: 10px;
+}
+
+.reservation__btn .like-btn:hover {
+    background: url(/img/like__hover.png) no-repeat;
+    top: 16px;
+    right: -2px;
+}
+
+.reservation__btn .like-btn.active {
+    background-image: url(/img/like__active.png);
+}
+
+.reservation__btn .like-btn.block {
+    background-image: url(/img/like__no-active.png);
+}
+
+.reservation__btn .like-btn.active.block {
+    background-image: url(/img/like__active.png);
+}
 
 
 
@@ -1063,15 +1228,124 @@
     min-height: 100%;
 }
 
+.apartments__right .payment__form-content {
+    position: relative;
+    padding: 30px 38px 20px;
+}
 
+.apartments__right .payment__form-head {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 45px 17px 38px;
+}
 
+.form__head-title {
+    display: flex;
+    align-items: center;
+}
 
+.form__head-title .title__price {
+    display: flex;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #FF3535;
+}
 
+.form__head-title .title__price span {
+    font-weight: 300;
+    font-size: 18px;
+    color: #979798;
+    text-decoration: line-through;
+    margin: 0 5px 0 7px;
+}
 
+.reviews__block-head {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.reviews__block-title {
+    display: flex;
+}
 
+.reviews__block-title img {
+    margin-right: 10px;
+}
 
+.reviews__block-title p {
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #50575E;
+}
 
+.reviews__block-text p {
+    border-radius: 4px;
+    background-color: #FCE3E3;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    padding: 0 14px;
+    color: #9D6767;
+}
+
+.apartments__right .search-result {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    border: none;
+}
+
+.apartments__right .search-result__item {
+    width: 100%;
+    border: 2px solid #EEF3F9;
+    border-radius: 4px;
+    padding: 13px 0 2px;
+}
+
+.apartments__right input.search-result__input {
+    padding: 0 26px;
+    background-color: #fff;
+    height: 35px;
+}
+
+.apartments__right .search-result__item:first-child {
+    margin-bottom: 15px;
+}
+
+.search-result__item .result__item-text {
+    font-size: 14px;
+    line-height: 0px;
+    letter-spacing: 0.02em;
+    color: #898989;
+    padding: 0 26px;
+}
+
+.dropdown__first {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 7;
+    background: #ffffff;
+    width: 100%;
+    display: none;
+}
+
+.dropdown__first.active {
+    display: block;
+    height: 300px;
+}
+.dropdown__first #calendar{
+    position: relative;
+}
+
+.apartments__right .payment__form .btn-red{
+    display: flex;
+    cursor: pointer;
+}
 
 
 
@@ -1092,7 +1366,8 @@
     .home__rules .accordion a,
     .coordinates .accordion a,
     .show__oll-reviews,
-    .about__master-img .master__status {
+    .about__master-img .master__status,
+    .like__btn-head {
         display: none;
     }
 
