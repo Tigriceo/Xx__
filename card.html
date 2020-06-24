@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
     <title>card</title>
+    <meta name="description" content="Xx">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=400, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/Xx..ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="fullcalendar/packages/core/main.css">
     <link rel="stylesheet" href="fullcalendar/packages/daygrid/main.css">
     <link rel="stylesheet" href="fullcalendar/packages/timegrid/main.css">
-    <link rel="stylesheet" href="css/calenadar.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/daterangepicker.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/card.css">
 </head>
 
 <body>
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <!-- preloader -->
     <div id="wrapper">
         <!-- header.html -->
         <header class="header header-main">
@@ -64,14 +73,8 @@
             </div>
         </header>
 
-
         <div id="wrapper-content">
-
-
-
-
             <div class="container">
-
                 <div class="top__gallery">
                     <div class="left__img">
                         <a href="#openModal">
@@ -95,21 +98,15 @@
                             <img src="/content_img/second__img3.svg" alt="apartments">
                         </a>
                     </div>
-
-
                 </div>
-
-
                 <!-- данные__заказа__модальное_окно-начало -->
                 <div id="openModal" class="modal">
                     <div class="modal-dialog">
                         <div class="modal-content">
-
                             <div class="modal-body">
                                 <a href="#close__window" title="Close" class="close__window">
                                     <img src="img/X.png" alt="close">
                                 </a>
-
                                 <div class="slider">
                                     <div class="slider__item">
                                         <img src="/content_img/main__img.svg" alt="slider">
@@ -130,36 +127,21 @@
                                     <div class="slider__item">
                                         <img src="/content_img/second__img4.svg" alt="slider">
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- данные__заказа__модальное_окно-конец -->
-
-
-
-
-
-
-
             </div>
-
-
-
             <div class="container__info">
-
                 <div class="apartments__info">
-
                     <div class="apartments__main">
-
                         <div class="title__main">
                             <h2>Просторная и современная квартира в центре города</h2>
-                            <div class="save__info" action="/">
+                            <div class="save__info">
                                 <a href="#">
-                                    <img src="img/save_photo.png" alt="oll_photo">
+                                    <img src="img/save_photo.svg" alt="oll_photo">
                                     <p>Все фото</p>
                                 </a>
                                 <form action="/">
@@ -171,7 +153,6 @@
                                 </form>
                             </div>
                         </div>
-
                         <div class="characteristics">
                             <h3>характеристики</h3>
                             <div class="characteristics__items">
@@ -179,73 +160,67 @@
                                     <div class="characteristics__block">
                                         <div class="characteristics__item">
                                             <span></span>
-                                            <img src="img/area.png" alt="area">
+                                            <img src="img/area.svg" alt="area">
                                             <p>Площадь 20 кв.м.</p>
                                         </div>
                                         <div class="characteristics__item">
                                             <span></span>
-                                            <img src="img/bathroom.png" alt="bathroom">
+                                            <img src="img/bathroom.svg" alt="bathroom">
                                             <p>Ванные комнаты: 1</p>
                                         </div>
                                     </div>
                                     <div class="characteristics__block">
                                         <div class="characteristics__item">
                                             <span></span>
-                                            <img src="img/plans.png" alt="plans">
+                                            <img src="img/plans.svg" alt="plans">
                                             <p>1-комнатная</p>
                                         </div>
                                         <div class="characteristics__item">
                                             <span></span>
-                                            <img src="img/person.png" alt="person">
+                                            <img src="img/person.svg" alt="person">
                                             <p>Максимум 2 гостя</p>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="characteristics__right">
                                     <div class="characteristics__item">
                                         <span></span>
-                                        <img src="img/night.png" alt="night">
+                                        <img src="img/night.svg" alt="night">
                                         <p>Минимум 1 ночь</p>
                                     </div>
                                     <div class="characteristics__item">
                                         <span></span>
-                                        <img src="img/stairs.png" alt="stairs">
+                                        <img src="img/stairs.svg" alt="stairs">
                                         <p>1 этаж из 9</p>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
                         <div class="sleepingplaces">
                             <h3>Cпальные места</h3>
                             <div class="sleepingplaces__items">
                                 <div class="sleepingplaces__item">
                                     <div>
-                                        <img src="img/double_bed.png" alt="double_bed">
+                                        <img src="img/double_bed.svg" alt="double_bed">
                                     </div>
                                     <h4>Спальня 1</h4>
                                     <p>Сдвоенная кровать</p>
                                 </div>
                                 <div class="sleepingplaces__item">
                                     <div>
-                                        <img src="img/bed_min.png" alt="bed">
-                                        <img src="img/sofa.png" alt="sofa">
+                                        <img src="img/bed_min.svg" alt="bed">
+                                        <img src="img/sofa.svg" alt="sofa">
                                     </div>
                                     <h4>Спальня 2</h4>
                                     <p>Кровать, диван</p>
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="description__text">
                             <h3>Описание</h3>
-
                             <div class="container__description">
-                                <h4>Небольшой уютный гостиничный номер в жилом многоквартирном
-                                    доме. Удобное месторасположение и уникальный дизайн апартаментов подарят Вам
+                                <h4>Небольшой уютный гостиничный номер в жилом многоквартирном доме.<br>
+                                    Удобное месторасположение и уникальный дизайн апартаментов подарят Вам
                                     незабываемые ощущения. Комната укомплектована всем необходимым для ...</h4>
                                 <div class="accordion">
                                     <dl>
@@ -269,59 +244,50 @@
                                                 adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum
                                                 tincidunt.</p>
                                         </dd>
-
                                     </dl>
                                 </div>
                             </div>
-
                         </div>
-
-
                         <div class="facilities">
                             <h3>Удобства</h3>
-
                             <div class="facilities__items">
                                 <div class="facilities__item">
                                     <div>
                                         <span></span>
-                                        <img src="img/wi_fi.png" alt="wi_fi">
+                                        <img src="img/wi_fi.svg" alt="wi_fi">
                                         <p>Wi-Fi</p>
                                     </div>
                                     <div>
                                         <span></span>
-                                        <img src="img/washing_mashine.png" alt="washing_mashine">
+                                        <img src="img/washing_mashine.svg" alt="washing_mashine">
                                         <p>Стиральная<br> машина</p>
                                     </div>
                                 </div>
-
                                 <div class="facilities__item">
                                     <div>
                                         <span></span>
-                                        <img src="img/wi_fi.png" alt="wi_fi">
+                                        <img src="img/wi_fi.svg" alt="wi_fi">
                                         <p>Wi-Fi</p>
                                     </div>
                                     <div>
                                         <span></span>
-                                        <img src="img/kitchen.png" alt="kitchen">
+                                        <img src="img/kitchen.svg" alt="kitchen">
                                         <p>Кухонные<br> принадлежности</p>
                                     </div>
                                 </div>
-
                                 <div class="facilities__item">
                                     <div>
                                         <span></span>
-                                        <img src="img/tv.png" alt="tv">
+                                        <img src="img/tv.svg" alt="tv">
                                         <p>Телевизор</p>
                                     </div>
                                     <div>
                                         <span></span>
-                                        <img src="img/balcon.png" alt="balcon">
+                                        <img src="img/balcon.svg" alt="balcon">
                                         <p>Балкон</p>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="container__facilities">
                                 <div class="accordion">
                                     <dl>
@@ -331,67 +297,52 @@
                                                 js-accordionTrigger">Показать все
                                                 удобства</a>
                                         </dt>
-                                        <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                        <dd class="accordion-content accordionItem is-collapsed" id="accordion2"
                                             aria-hidden="true">
                                             <div class="facilities__items facilities__items-accordion">
                                                 <div class="facilities__item">
                                                     <div>
-                                                        <span></span>
-                                                        <img src="img/wi_fi.png" alt="wi_fi">
+                                                        <img src="img/wi_fi.svg" alt="wi_fi">
                                                         <p>Wi-Fi</p>
                                                     </div>
                                                     <div>
-                                                        <span></span>
-                                                        <img src="img/washing_mashine.png" alt="washing_mashine">
+                                                        <img src="img/washing_mashine.svg" alt="washing_mashine">
                                                         <p>Стиральная<br> машина</p>
                                                     </div>
                                                 </div>
-
                                                 <div class="facilities__item">
                                                     <div>
-                                                        <span></span>
-                                                        <img src="img/wi_fi.png" alt="wi_fi">
+                                                        <img src="img/wi_fi.svg" alt="wi_fi">
                                                         <p>Wi-Fi</p>
                                                     </div>
                                                     <div>
-                                                        <span></span>
-                                                        <img src="img/kitchen.png" alt="kitchen">
+                                                        <img src="img/kitchen.svg" alt="kitchen">
                                                         <p>Кухонные<br> принадлежности</p>
                                                     </div>
                                                 </div>
-
                                                 <div class="facilities__item">
                                                     <div>
-                                                        <span></span>
-                                                        <img src="img/tv.png" alt="tv">
+                                                        <img src="img/kitchen.svg" alt="tv">
                                                         <p>Телевизор</p>
                                                     </div>
                                                     <div>
-                                                        <span></span>
-                                                        <img src="img/balcon.png" alt="balcon">
+                                                        <img src="img/balcon.svg" alt="balcon">
                                                         <p>Балкон</p>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </dd>
-
                                     </dl>
                                 </div>
                             </div>
-
-
-
                         </div>
-
-
                         <div class="rememberthis">
                             <h3>Что нужно помнить</h3>
 
                             <div class="rememberthis__items">
                                 <div class="rememberthis__item">
                                     <span></span>
-                                    <img src="img/clock.png" alt="clock">
+                                    <img src="img/clock.svg" alt="clock">
                                     <div>
                                         <h5>Прибытие</h5>
                                         <p>13:00 – 00:00</p>
@@ -399,20 +350,15 @@
                                 </div>
                                 <div class="rememberthis__item">
                                     <span></span>
-                                    <img src="img/clock.png" alt="clock">
+                                    <img src="img/clock.svg" alt="clock">
                                     <div>
                                         <h5>Выезд</h5>
                                         <p>11:00</p>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
-
                         <div class="home__rules">
-
-
                             <div class="accordion">
                                 <dl>
                                     <dt>
@@ -420,46 +366,37 @@
                                                 js-accordionTrigger">Правила дома</a>
                                         <h3>Правила дома</h3>
                                     </dt>
-                                    <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                    <dd class="accordion-content accordionItem is-collapsed" id="accordion3"
                                         aria-hidden="true">
                                         <div class="facilities__items facilities__items-accordion">
                                             <div class="facilities__item">
                                                 <div>
                                                     <span></span>
-                                                    <img src="img/pet.png" alt="wi_fi">
-                                                    <p>Можно с животными</p>
+                                                    <img src="img/pet__bg.svg" alt="wi_fi">
+                                                    <p>Можно<br> с животными</p>
                                                 </div>
 
                                             </div>
-
                                             <div class="facilities__item">
                                                 <div>
                                                     <span></span>
-                                                    <img src="img/no__party.png" alt="wi_fi">
-                                                    <p>Без вечеринок и мероприятий</p>
+                                                    <img src="img/no__party.svg" alt="wi_fi">
+                                                    <p>Без вечеринок<br> и мероприятий</p>
                                                 </div>
-
                                             </div>
-
                                             <div class="facilities__item">
                                                 <div>
                                                     <span></span>
-                                                    <img src="img/no__smok.png" alt="tv">
+                                                    <img src="img/no__smok.svg" alt="tv">
                                                     <p>Нельзя курить</p>
                                                 </div>
-
                                             </div>
-
                                         </div>
                                     </dd>
-
                                 </dl>
                             </div>
                         </div>
-
                         <div class="home__rules cancellation__policy">
-
-
                             <div class="accordion">
                                 <dl>
                                     <dt>
@@ -467,38 +404,31 @@
                                                 js-accordionTrigger">Политика отмены бронирования</a>
                                         <h3>Политика отмены бронирования от владельца квартиры</h3>
                                     </dt>
-                                    <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                    <dd class="accordion-content accordionItem is-collapsed" id="accordion4"
                                         aria-hidden="true">
                                         <div class="facilities__items facilities__items-accordion">
                                             <p>Предоплата не возвращается в случае отмены заказа менее чем за 7 дней до
                                                 заезда.</p>
-
                                         </div>
                                     </dd>
-
                                 </dl>
                             </div>
                         </div>
-
                         <div class="coordinates">
                             <h3>Месторасположение</h3>
-
                             <div class="map__main">
                                 <div class="map__title">
                                     <img src="img/map__img.png" alt="">
                                     <h2>ул. Саксаганского 7, Центр, Киев</h2>
                                 </div>
                                 <div class="map__item">
-                                    <iframe
+                                    <iframe title='google__map'
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.5303944531443!2d30.5188191295774!3d50.43567638127056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefd91844331%3A0xa909ac4f315b09b8!2z0YPQuy4g0KHQsNC60YHQsNCz0LDQvdGB0LrQvtCz0L4sIDcsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1592637471119!5m2!1sru!2sua"
                                         width="683" height="314" frameborder="0" style="border:0;" allowfullscreen=""
                                         aria-hidden="false" tabindex="0"></iframe>
                                 </div>
-
                             </div>
-
                             <div class="container__description">
-
                                 <div class="accordion">
                                     <dl>
                                         <dt>
@@ -506,7 +436,7 @@
                                                 class="accordion-title accordionTitle js-accordionTrigger">детальнее про
                                                 локацию</a>
                                         </dt>
-                                        <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                        <dd class="accordion-content accordionItem is-collapsed" id="accordion5"
                                             aria-hidden="true">
                                             <div class="facilities__items facilities__items-accordion">
                                                 <div class="list__coordinates">
@@ -524,44 +454,31 @@
                                                         <li>Пинчук Арт Центр (~0.63 км)</li>
                                                     </ol>
                                                 </div>
-
                                             </div>
                                         </dd>
-
                                     </dl>
                                 </div>
                             </div>
-
                         </div>
-
-
                         <div class="calendar">
                             <h3>Доступность</h3>
                             <div class="calendar__item">
-
                                 <form class="calendar__full" action="/">
                                     <div id='calendar'></div>
                                 </form>
-
                             </div>
-
-
-
                         </div>
-
                         <div class="reviews">
                             <div class="reviews__title">
                                 <h3>Отзывы</h3>
                                 <div>
-                                    <img class="img-star" src="img/star.png" alt="">
+                                    <img class="img-star" src="img/star__.svg" alt="">
                                     <p>5.0 <span>(98 отзывов)</span></p>
                                 </div>
                             </div>
                             <div class="progressbar">
                                 <div class="progressbar__items">
-
                                     <div class="left__block">
-
                                         <div class="left__block-item">
                                             <h5>Общение</h5>
                                             <div>
@@ -598,11 +515,8 @@
                                                 <span>5,0</span>
                                             </div>
                                         </div>
-
                                     </div>
-
                                     <div class="left__block right__block">
-
                                         <div class="left__block-item">
                                             <h5>Точность</h5>
                                             <div>
@@ -639,15 +553,9 @@
                                                 <span>5,0</span>
                                             </div>
                                         </div>
-
                                     </div>
-
-
-
                                 </div>
-
                             </div>
-
                             <div class="description__text description__text-first">
                                 <div class="avatar">
                                     <img class="client__photo" src="img/ava.png" alt="avatar">
@@ -659,7 +567,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="container__description">
                                     <h4>В Баку для своего отдыха нашла это предложение с прекрасными видом и большими
                                         панорамными окнами! Мы были и остались в восторге от неё! Современный стильный
@@ -671,7 +578,7 @@
                                                     class="accordion-title accordionTitle js-accordionTrigger">Читать
                                                     полностью</a>
                                             </dt>
-                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion6"
                                                 aria-hidden="true">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
                                                     interdum diam. Donec interdum porttitor risus non bibendum. Maecenas
@@ -682,15 +589,11 @@
                                                     varius.
                                                     Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
                                                 </p>
-
                                             </dd>
-
                                         </dl>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="description__text">
                                 <div class="avatar">
                                     <img class="client__photo" src="img/ava.png" alt="avatar">
@@ -702,7 +605,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="container__description">
                                     <h4>В Баку для своего отдыха нашла это предложение с прекрасными видом и большими
                                         панорамными окнами! Мы были и остались в восторге от неё! Современный стильный
@@ -714,7 +616,7 @@
                                                     class="accordion-title accordionTitle js-accordionTrigger">Читать
                                                     полностью</a>
                                             </dt>
-                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion7"
                                                 aria-hidden="true">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
                                                     interdum diam. Donec interdum porttitor risus non bibendum. Maecenas
@@ -725,13 +627,10 @@
                                                     varius.
                                                     Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
                                                 </p>
-
                                             </dd>
-
                                         </dl>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="description__text description__text-last">
                                 <div class="avatar">
@@ -744,7 +643,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="container__description">
                                     <h4>В Баку для своего отдыха нашла это предложение с прекрасными видом и большими
                                         панорамными окнами! Мы были и остались в восторге от неё! Современный стильный
@@ -756,7 +654,7 @@
                                                     class="accordion-title accordionTitle js-accordionTrigger">Читать
                                                     полностью</a>
                                             </dt>
-                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion1"
+                                            <dd class="accordion-content accordionItem is-collapsed" id="accordion8"
                                                 aria-hidden="true">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
                                                     interdum diam. Donec interdum porttitor risus non bibendum. Maecenas
@@ -767,19 +665,14 @@
                                                     varius.
                                                     Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.
                                                 </p>
-
                                             </dd>
-
                                         </dl>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="show__oll-reviews">
                                 <a href="#">Показать все отзывы</a>
                             </div>
-
                             <nav aria-label="navigation">
                                 <ul class="pagination">
                                     <li class="page-item">
@@ -793,9 +686,7 @@
                                     <li class="page-item"><a class="page-next page-arrow" href="#"></a></li>
                                 </ul>
                             </nav>
-
                         </div>
-
                         <div class="about__master">
                             <h3>ХОЗЯИН sinan</h3>
                             <div class="about__master-items">
@@ -831,14 +722,11 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="some__text">
                                 <p>Im Sinan, studied in Tourism Management at University of Surrey. My hobbies are:
                                     Football, Basketball, Collecting pins and Traveling.</p>
                             </div>
-
                             <div class="master__skills">
                                 <div class="master__skills-main">
                                     <p>Языки: <span>English, Русский, Türkçe</span></p>
@@ -851,19 +739,10 @@
                                         гостей</span>
                                 </div>
                             </div>
-
                         </div>
-
-
                     </div>
-
-
-
-
-
                     <div class="apartments__right">
                         <div class="payment__form">
-
                             <div class="payment__form-head">
                                 <div class="form__head-title">
                                     <div class="title__price">$45 <span>$50$</span></div>
@@ -871,7 +750,7 @@
                                 </div>
                                 <div class="reviews__block-head">
                                     <div class="reviews__block-title">
-                                        <img src="img/star.png" alt="star">
+                                        <img src="img/star__.svg" alt="star">
                                         <p>5,0 <span>(98 отзывов)</span></p>
                                     </div>
                                     <div class="reviews__block-text">
@@ -879,21 +758,18 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="payment__form-content">
-
                                 <span class="like-btn like-btn_mb"></span>
                                 <form class="search-result">
-
                                     <div class="search-result__item">
                                         <span class="result__item-text">Прибытие и выезд</span>
                                         <input class="search-result__input search-result__date search-result__item-drop"
                                             value="10.10 - 20.10" required="">
-                                        <!-- <ul class="dropdown__first">
-                                            
-                                                <div id='calendar'></div>
-                                         
-                                        </ul> -->
+                                        <div class="dropdown__first calendar">
+                                            <div class="calendar__full">
+                                                <div id='calendar-two'></div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="search-result__item">
                                         <span class="result__item-text">Гостей</span>
@@ -924,12 +800,7 @@
                                             </li>
                                         </ul>
                                     </div>
-
-
                                 </form>
-
-
-
                                 <ul class="payment__form-ul">
                                     <li class="payment__form-li">
                                         <div class="counts">
@@ -969,23 +840,13 @@
                                     </li>
                                 </ul>
                                 <botton class="btn btn-red">ЗАБРОНИРОВАТЬ</botton>
-
-
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
-
                 <div class="similaroffers">
                     <h2>Похожие предложения</h2>
-
-
                     <div class="similaroffers__items">
-
-
                         <div class="similaroffers__item">
                             <div class="item__img">
                                 <span class="sale">-15%</span>
@@ -998,7 +859,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h3>Просторная и современная квартира в центре города</h3>
+                            <a href="#">Просторная и современная квартира в центре города</a>
                             <div class="place__price">
                                 <div class="place__item">
                                     <img src="img/map__img.png" alt="map">
@@ -1012,13 +873,10 @@
                                 </div>
                             </div>
                             <button class="reservation__btn" type="submit">
-                                <h4>МГНОВЕННОЕ БРОНИРОВАНИЕ</h4>
+                                <span class="reservation__title">МГНОВЕННОЕ БРОНИРОВАНИЕ</span>
                                 <span class="like-btn"></span>
-
                             </button>
-
                         </div>
-
                         <div class="similaroffers__item">
                             <div class="item__img">
                                 <span class="sale">-15%</span>
@@ -1031,7 +889,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h3>Просторная и современная квартира в центре города</h3>
+                            <a href="#">Просторная и современная квартира в центре города</a>
                             <div class="place__price">
                                 <div class="place__item">
                                     <img src="img/map__img.png" alt="map">
@@ -1045,13 +903,10 @@
                                 </div>
                             </div>
                             <button class="reservation__btn" type="submit">
-                                <h4>МГНОВЕННОЕ БРОНИРОВАНИЕ</h4>
+                                <span class="reservation__title">МГНОВЕННОЕ БРОНИРОВАНИЕ</span>
                                 <span class="like-btn"></span>
-
                             </button>
-
                         </div>
-
                         <div class="similaroffers__item">
                             <div class="item__img">
                                 <span class="sale">-15%</span>
@@ -1064,7 +919,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h3>Просторная и современная квартира в центре города</h3>
+                            <a href="#">Просторная и современная квартира в центре города</a>
                             <div class="place__price">
                                 <div class="place__item">
                                     <img src="img/map__img.png" alt="map">
@@ -1078,36 +933,20 @@
                                 </div>
                             </div>
                             <button class="reservation__btn" type="submit">
-                                <h4>МГНОВЕННОЕ БРОНИРОВАНИЕ</h4>
+                                <span class="reservation__title">МГНОВЕННОЕ БРОНИРОВАНИЕ</span>
                                 <span class="like-btn"></span>
-
                             </button>
-
                         </div>
-
-
-
-
                     </div>
                     <a class="btn btn-red apartments__info-btn" target="_blank" href="#">
                         больше вариантов
+                        <svg class="arrow">
+                            <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                        </svg>
                     </a>
                 </div>
-
-
-
-
             </div>
-
-
-
-
         </div>
-
-
-
-
-
         <footer class="footer">
             <div class="container">
                 <div class="footer-top">
@@ -1180,7 +1019,6 @@
                             <img src="img/google-play.png" alt="google play" class="markets-img">
                         </a>
                     </div>
-
                 </div>
             </div>
             <div class="footer-bottom">
@@ -1223,13 +1061,9 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </footer>
-
-
-
         <div>
             <div class="popups popup__lang-curr">
                 <div class="popup">
@@ -1316,7 +1150,6 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="popups popup__additional-filters">
@@ -1338,7 +1171,6 @@
                                 <span class="check-text">Опытный хозяин
                                     <span class="check-span"> Останавливайтесь у самых гостеприимных хозяев <a href="#"
                                             class="c-blue">Подробнее</a></span>
-
                                 </span>
                             </label>
                         </div>
@@ -1453,7 +1285,6 @@
                 </div>
             </div>
         </div>
-
         <div class="error" id="error">
             <div class="error__head">
                 <p class="text-15 c-blue">ОШИБКА title </p>

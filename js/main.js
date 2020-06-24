@@ -1,3 +1,16 @@
+//  preloader
+ window.onload = function () {
+     document.body.classList.add('loaded_hiding');
+     window.setTimeout(function () {
+         document.body.classList.add('loaded');
+         document.body.classList.remove('loaded_hiding');
+     }, 500);
+ }
+//  preloader
+
+
+
+///главный__календарь
 console.clear();
 
 let alterClass = function () {
@@ -172,6 +185,150 @@ document.addEventListener("DOMContentLoaded", function () {
     calendar.render();
 });
 
+//главный__календарь
+//второй__календарь
+// https://fullcalendar.io/docs/getting-started
+// https://fullcalendar.io/docs/initialize-globals-demo
+document.addEventListener("DOMContentLoaded", function () {
+    var calendarEl = document.getElementById("calendar-two");
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: ["interaction", "dayGrid", "timeGrid", "list", "moment", "rrule"],
+        defaultView: "dayGridMonth",
+        themeSystem: "standard",
+        locale: "ru",
+        selectable: true,
+        height: 450,
+
+        editable: false,
+        navLinks: false,
+
+        // ALLOW "MORE" LINK WHEN TOO MANY EVENTS
+        eventLimit: true,
+
+        /* HEADER */
+        header: {
+            left: "prev,next",
+            center: "title",
+            right: "btnReload,dayGridMonth"
+        },
+
+        /* HEADER */
+        views: {
+            listDay: {
+                buttonText: "День"
+            },
+            listWeek: {
+                buttonText: "Неделя"
+            }
+        },
+
+        /* HEADER */
+        buttonText: {
+            today: "Сегодня"
+        },
+
+        /* HEADER */
+        customButtons: {
+            btnReload: {
+                text: "↻",
+                click: function () {
+                    // calendar.refetchEvents();
+                    // document.location.reload();
+                    console.log("btnReload...");
+                }
+            }
+        },
+
+
+        /* EVENT TIME FORMAT */
+        eventTimeFormat: {
+            hour: "2-digit",
+            minute: "2-digit"
+        },
+
+        events: [{
+                title: "All Day Event",
+                start: "2019-06-01"
+            },
+            {
+                title: "Long Event",
+                start: "2019-06-07",
+                end: "2019-06-10"
+            },
+            {
+                groupId: "999",
+                title: "Repeating Event",
+                start: "2019-06-09T16:00:00"
+            },
+            {
+                groupId: "999",
+                title: "Repeating Event",
+                start: "2019-06-16T16:00:00"
+            },
+            {
+                title: "Conference",
+                start: "2019-06-11",
+                end: "2019-06-13"
+            },
+            {
+                title: "Meeting",
+                start: "2019-06-12T10:30:00",
+                end: "2019-06-12T12:30:00"
+            },
+            {
+                title: "Lunch",
+                start: "2019-06-12T12:00:00"
+            },
+            {
+                title: "Meeting",
+                start: "2019-06-12T14:30:00"
+            },
+            {
+                title: "Birthday Party",
+                start: "2019-06-13T07:00:00"
+            },
+            {
+                title: "Click for Google",
+                url: "http://google.com/",
+                start: "2019-06-28"
+            },
+
+            {
+                title: "recurring ",
+
+                // FREQ:
+                // YEARLY = 0
+                // MONTHLY = 1
+                // WEEKLY = 2
+                // DAILY = 3
+                rrule: {
+                    dtstart: "2019-06-28T08:30:01"
+                },
+
+                // rrule: {
+                //   dtstart: "2020-01-01T08:30:01",
+                //   until: "2020-02-21",
+                //   freq: 1,
+                //   interval: 1,
+                //   count: 1,
+                //   // byweekday: ["MO", "TU", "WE", "TH", "FR"],
+                //   // count: 100,
+                // },
+                color: "green"
+            }
+        ]
+    });
+
+    calendar.render();
+});
+//второй календарь
+
+
+
+
+
+
 
 
 
@@ -189,8 +346,8 @@ $('.like-btn').on('mouseout', function () {
 });
 // like__btn
 
-//uses classList, setAttribute, and querySelectorAll
-//if you want this to work in IE8/9 youll need to polyfill these
+
+//акардеон
 (function () {
     var d = document,
         accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
@@ -250,7 +407,7 @@ $('.like-btn').on('mouseout', function () {
         accordionToggles[i].addEventListener('click', switchAccordion, false);
     }
 })();
-
+//акардеон
 
 
 
@@ -308,7 +465,7 @@ $(document).ready(function () {
 //адаптив__к_мобильной__версии__слайдера-начало
 $(document).ready(function () {
     var w = $(window).width(); // Получаем ширину окна
-    if (w <= 600) { // Если ширина окна меньше, либо равна 600
+    if (w <= 768) { // Если ширина окна меньше, либо равна 600
         $('.modal-dialog').height($('.modal-dialog').width() / 1.5); // Копируем содержимое правой колонки в левую
         $(window).resize(function () {
             $('.modal-dialog').height($('.modal-dialog').width() / 1.5);
@@ -317,3 +474,4 @@ $(document).ready(function () {
 });
 //адаптив__к_мобильной__версии__слайдера-конец
 //slick__slider-конец
+
