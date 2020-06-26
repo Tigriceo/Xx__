@@ -324,10 +324,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //второй календарь
 
+// Добавить/Удалить__элементы
+    $(".button__add").click(function () {
+        var $toAdd = $("input[name=checkListItem]").val();
+        $(".list").append('<div class="item"><div class="item-close">' + $toAdd + '</div></div>');
+    });
+    //instead of using .click to remove use document on click.
+    //click is the event, .item is the selector
+    $(document).on('click', '.item', function () {
+        $(this).remove();
+    });
 
-
-
-
+// Добавить/Удалить__элементы
 
 
 

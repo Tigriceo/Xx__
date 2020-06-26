@@ -73,13 +73,15 @@
 }
 
 .header .container__heder {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     padding: 0 20px;
 }
 
 .container {
     /* max-width: 1428px; */
-    max-width: 1320px;
+    /* max-width: 1320px; */
+    max-width: 100%;
+    padding: 0;
 }
 
 .container__info {
@@ -94,7 +96,7 @@
 .top__gallery {
     display: flex;
     justify-content: space-between;
-    max-height: 450px;
+    /* max-height: 450px; */
     margin-bottom: 66px;
 }
 
@@ -111,7 +113,7 @@
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -o-transition: all .4s ease;
-    width: 100.1%;
+    width: 100.3%;
 }
 
 
@@ -121,6 +123,18 @@
 
 .top__gallery a:hover {
     background: url(/img/foto_galery-hover.jpg) no-repeat 50% 50%;
+}
+
+.left__img {
+    width: 248%;
+}
+
+.center__img {
+    width: 100%;
+}
+
+.right__img {
+    width: 99.4%;
 }
 
 /* modal__window-start */
@@ -219,14 +233,14 @@
     -moz-transition: transform 0.3s ease-in-out 0s;
 }
 
-.close__window:hover {
+/* .close__window:hover {
     transform: scale(1.1);
     transform: rotate(90deg);
     transition: transform 0.3s ease-in-out 0s;
     -o-transition: transform 0.3s ease-in-out 0s;
     -moz-transition: transform 0.3s ease-in-out 0s;
 
-}
+} */
 
 .slick-slider {
     max-height: 636px;
@@ -284,10 +298,11 @@
 }
 
 .title__main h2 {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 38px;
     letter-spacing: 0.02em;
     color: #124570;
+    font-family: "Merriweather-Bold", sans-serif;
 }
 
 .save__info a {
@@ -965,7 +980,8 @@
 .reviews__title div span {
     color: #898989;
 }
-.reviews__title div{
+
+.reviews__title div {
     display: flex;
     margin-bottom: 24px;
 }
@@ -1137,6 +1153,7 @@
 }
 
 .about__master {
+    margin-top: 30px;
     padding-bottom: 30px;
     border-bottom: 2px solid #EAF2FA;
 }
@@ -1609,7 +1626,8 @@
     text-transform: uppercase;
 
 }
-.apartments__info-btn .arrow{
+
+.apartments__info-btn .arrow {
     position: relative;
     top: -1px;
 }
@@ -1630,6 +1648,10 @@
 .payment__form-ul {
     padding: 0 3px;
 }
+.footer {
+    padding: 0 20px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media screen and (max-width: 1200px) {
@@ -1637,6 +1659,7 @@
         max-width: 360px;
     }
 }
+
 @media screen and (max-width: 1100px) {
     .apartments__main {
         max-width: 685px;
@@ -2043,6 +2066,7 @@
     .search-result__item .dropdown {
         left: 0;
     }
+
     .reviews {
         margin-bottom: 31px;
     }

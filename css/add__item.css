@@ -1,0 +1,536 @@
+.container {
+    max-width: 1440px;
+}
+
+.container__box {
+    max-width: 555px;
+}
+
+/* progress-bar */
+.progress {
+    max-width: 100%;
+    width: 11.111%;
+    height: 5px;
+    background-color: #EAF2FA;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.progress.progress__two {
+    width: 22.222%;
+}
+
+.progress.progress__three {
+    width: 33.333%;
+}
+
+.progress.progress__four {
+    width: 44.444%;
+}
+
+.progress.progress__five {
+    width: 55.555%;
+}
+
+.progress.progress__nine {
+    width: 99.999%;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #124570;
+    border-radius: 3px;
+}
+
+.progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+
+.progress.active .progress-bar {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+    -moz-animation: progress-bar-stripes 2s linear infinite;
+}
+
+/* progress-bar */
+
+/* первое__окно-начало */
+.title.apartaments__title h2 {
+    margin: 34px 0 20px;
+    font-size: 28px;
+    line-height: 64px;
+    color: #292C31;
+}
+
+.title.apartaments__title p,
+.choice__room p {
+    font-family: "Merriweather-Bold", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 26px;
+}
+
+.title.apartaments__title p {
+    max-width: 555px;
+    font-family: "Gilroy-Regular", sans-serif;
+}
+
+.choice__room p {
+    margin-bottom: 0;
+    font-family: "Gilroy-Regular", sans-serif;
+}
+
+.container__box .field {
+    margin-bottom: 0px;
+}
+
+
+
+.choice__room .label-radio {
+    max-width: 555px;
+}
+
+.btn__block {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 65px;
+}
+
+.btn__block .btn-red {
+    padding: 0 63.7px;
+}
+
+.btn__block .btn-back {
+    padding: 0px 45.5px;
+    color: #124570;
+    background-color: #EEF3F9;
+}
+
+.btn__block .btn-back:hover {
+    background: #DEECFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn__block .btn-back:active {
+    background: #DEECFF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.footer-top {
+    padding: 23px 0 24px;
+}
+
+.footer-top__row {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.col:first-child {
+    width: 100%;
+}
+
+/* первое__окно-конец */
+/* второе__окно-начало */
+.dropdown__noactive {
+    margin-bottom: 35px;
+}
+
+.dropdown__noactive .dropdown-item {
+    padding: 30px 10px 30px 25px;
+    align-items: center;
+}
+
+/* второе__окно-конец */
+
+/* третье__окно-начало */
+.container__box .field.field-payment__theee {
+    margin-bottom: -2px;
+}
+
+.adress__item p {
+    font-family: "Gilroy-SemiBold",
+        sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #124570;
+}
+
+/* третье__окно-конец */
+
+
+/* четвертое__окно-начало */
+.checkbox__add {
+    margin-bottom: 45px;
+}
+
+.checkbox__add .label-checkbox {
+    margin-bottom: 20px;
+}
+
+.checkbox__add .check-text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox__add .check-text-block .check-text.check-text-desc {
+    color: #898989;
+}
+
+.checkbox__add.checkbox__add-two h4 {
+    margin-bottom: 29px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #50575E;
+}
+
+/* четвертое__окно-конец */
+.container__box-five .requirements li {
+    display: flex;
+}
+
+.container__box-five .requirements li img {
+    width: 15px;
+    height: 11px;
+}
+
+/* пятое__окно-начало */
+.container__box.container__box-five {
+    padding-bottom: 70px;
+}
+
+.container__box.container__box-five ol li p {
+    line-height: 20px;
+}
+
+.container__box.container__box-five .list__items p:first-child {
+    margin: 40px 0 20px;
+}
+
+.container__box.container__box-five .field {
+    margin-bottom: 30px;
+    max-width: 294px;
+}
+
+.container__box.container__box-five .field input {
+    height: 55px;
+    background-color: #EEF3F9;
+    max-width: 294px;
+    text-align: center;
+    padding: 0 5px;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container__box.container__box-five .field .select {
+    background-color: #fff;
+}
+
+.container__box.container__box-five .field .select .select-option {
+    font-family: "Gilroy-Regular", sans-serif;
+    display: flex;
+    padding: 0 25px 0 10px;
+}
+
+.container__box.container__box-five .field .select .select-option {
+    padding-left: 36px;
+    position: relative;
+} 
+.container__box.container__box-five .field .select .select-option::before{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    content: url(/img/ok.svg);
+}
+
+.container__box.container__box-five .checkbox__add {
+    margin-bottom: 2px;
+}
+
+.container__box.container__box-five .btn__block {
+    margin-top: 50px;
+    margin: 60px 0 0;
+}
+
+/* пятое__окно-конец */
+
+
+/* шестое__окно-начало */
+.container__box.container__box-six .field.field-payment {
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+.container__box.container__box-six .some__text {
+    margin-top: 40px;
+}
+
+.container__box.container__box-six .checkbox__add {
+    margin-top: 30px;
+}
+
+.container__box .rules__block-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #EAF2FA;
+    padding: 30px 0;
+}
+
+.rules__block-set .counts-item {
+    display: flex;
+    align-items: center;
+}
+.container__box-six .check{
+    cursor: pointer;
+}
+
+.rules__block-set .popup__row .label-checkbox.label-checkbox__reject .check {
+    background: #EEF3F9 url(../img/reject__blu.svg) no-repeat center/30%;
+    cursor: pointer;
+}
+
+.rules__block-set .popup__row .label-checkbox.label-checkbox__reject .check:hover {
+    background: #DEECFF url(../img/reject__blu.svg) no-repeat center/30%;
+    cursor: pointer;
+}
+
+.rules__block-set .popup__row .checkbox.checkbox__reject:checked~.check {
+    background: #124570 url(../img/reject__white.svg) no-repeat center/30%;
+    cursor: pointer;
+}
+
+.rules__block-set .popup__row .label-checkbox.label-checkbox__accept .check {
+    background: #EEF3F9 url(../img/check.svg) no-repeat center/37%;
+    cursor: pointer;
+}
+
+.rules__block-set .popup__row .label-checkbox.label-checkbox__accept .check:hover {
+    background: #DEECFF url(../img/check.svg) no-repeat center/37%;
+    cursor: pointer;
+}
+
+.rules__block-set .popup__row .checkbox.checkbox__accept:checked~.check {
+    background: #124570 url(../img/check__white.svg) no-repeat center/37%;
+    cursor: pointer;
+}
+
+.rules__block-set .popup__row .check {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* добавить.удалить */
+.rules__block-set.rules__block-set-add {
+    padding: 0;
+    border: none;
+}
+
+.add__items-list {
+    margin: 50px 0 0 0;
+}
+
+.form-add-delete {
+    position: relative;
+}
+
+.form-add-delete .checkListForm {
+    width: 100%;
+}
+
+.form-add-delete div {
+    width: 100%;
+}
+
+.form-add-delete input {
+    padding: 5px;
+}
+
+.form-add-delete .button__add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 68px;
+    width: 129px;
+    text-align: center;
+    padding: 25px 3px 0px;
+    background-color: #EEF3F9;
+    color: #124570;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.item-close {
+    position: relative;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #EAF2FA;
+}
+
+.item-close:after {
+    content: "";
+    background: url(../img/reject__blu.svg) no-repeat center/100%;
+    width: 12px;
+    height: 14px;
+    font-size: 10px;
+    top: 41%;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.form-add-delete .item {
+    padding: 5px;
+}
+
+.rules__block-set .list {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: #50575E;
+    padding: 0;
+    height: auto;
+}
+
+.add__items-list input[placeholder] {
+    padding-left: 25px;
+    padding-right: 135px;
+}
+
+.add__items-list input:-moz-placeholder {
+    padding-left: 25px;
+    padding-right: 135px;
+}
+
+.add__items-list input::-moz-placeholder {
+    padding-left: 25px;
+    padding-right: 135px;
+}
+
+.add__items-list input:-ms-input-placeholder {
+    padding-left: 25px;
+    padding-right: 135px;
+}
+/* добавить.удалить */
+/* шестое__окно-конец */
+
+
+
+
+
+
+/* девятое__окно-начало */
+.container__box ol li {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 22px;
+
+}
+
+.container__box ol li h3 {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    font-family: "Gilroy-Bold", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #414950;
+}
+
+.container__box ol li p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.container__box .num {
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    background: #124570;
+    margin-right: 18px;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    min-width: 32px;
+    height: 32px;
+}
+
+.container__box ol li img {
+    display: flex;
+    margin-right: 18px;
+    width: 32px;
+    height: 32px;
+}
+
+.container__box .list__bt {
+    margin: 47px 0 47px;
+}
+
+.container__box .num.num__img {
+    background: none;
+    align-self: flex-start;
+}
+
+.container__box .list__bt .num__text {
+    margin-top: 6px;
+}
+
+
+/* девятое__окно-конец */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container__box {
+        margin: 0 auto;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .title.apartaments__title h2 {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .btn__block {
+        margin-bottom: 60px;
+    }
+
+    .btn__block .btn-red {
+        width: auto;
+    }
+
+    .btn__block .btn-back {
+        padding: 0 63.7px;
+    }
+}
