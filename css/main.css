@@ -1337,6 +1337,7 @@ input.popup__input {
     background-color: #DEECFF; }
 
 .check {
+  cursor: pointer;
   background-color: #EEF3F9;
   border-radius: 4px;
   width: 40px;

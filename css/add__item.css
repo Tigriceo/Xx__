@@ -6,6 +6,18 @@
     max-width: 555px;
 }
 
+.container__box .select-option {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.container__box.container__box-seven {
+    max-width: 750px;
+}
+.select{
+    background-color: #fff;
+}
+
 /* progress-bar */
 .progress {
     max-width: 100%;
@@ -31,6 +43,14 @@
 
 .progress.progress__five {
     width: 55.555%;
+}
+
+.progress.progress__six {
+    width: 66.666%;
+}
+
+.progress.progress__seven {
+    width: 77.777%;
 }
 
 .progress.progress__nine {
@@ -88,6 +108,11 @@
 
 .container__box .field {
     margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.container__box .field input {
+    cursor: pointer;
 }
 
 
@@ -248,8 +273,9 @@
 .container__box.container__box-five .field .select .select-option {
     padding-left: 36px;
     position: relative;
-} 
-.container__box.container__box-five .field .select .select-option::before{
+}
+
+.container__box.container__box-five .field .select .select-option::before {
     position: absolute;
     top: 0;
     left: 10px;
@@ -295,7 +321,8 @@
     display: flex;
     align-items: center;
 }
-.container__box-six .check{
+
+.container__box-six .check {
     cursor: pointer;
 }
 
@@ -428,8 +455,263 @@
     padding-left: 25px;
     padding-right: 135px;
 }
+
 /* добавить.удалить */
 /* шестое__окно-конец */
+
+
+/* седьмое__окно-начало */
+.main__content {
+    display: flex;
+}
+
+.left__content {
+    margin-right: 30px;
+}
+
+.right__content {
+    margin: 0 auto;
+    min-height: 100%;
+    padding-top: 50px;
+}
+
+.protest {
+    background: #FCFDFF;
+    border: 2px solid #EEF3F9;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.container__box-seven .days__plan {
+    display: flex;
+    align-items: center;
+    padding-bottom: 49px;
+    margin-bottom: 42px;
+    border-bottom: 2px solid #EAF2FA;
+}
+
+.container__box-seven .field {
+    min-width: 262px;
+    margin-right: 30px;
+}
+
+.container__box-seven .name {
+    top: 13px;
+}
+
+.days__plan input {
+    height: 65px;
+}
+
+.days__plan .field-payment .icon {
+    height: 62px;
+    right: 0;
+}
+
+.days__plan-text h3 {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #124570;
+    letter-spacing: 0.02em;
+
+}
+
+.days__plan-text p {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #898989;
+}
+
+.container__box-seven .days__plan.days__plan-two {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container__box-seven .days__plan.days__plan-two h6,
+.days__plan.days__plan-cost h6,
+.days__plan.days__plan-calendar h6,
+.days__plan.set__your-price h6 {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #50575E;
+    margin-bottom: 25px;
+
+}
+
+.container__box-seven .days__plan.days__plan-two .days__plan-items {
+    display: flex;
+}
+
+.container__box-seven .days__plan.days__plan-cost {
+    max-width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container__box-seven .long__stay {
+    max-width: 555px;
+}
+
+.container__box-seven .days__plan.days__plan-cost .dropdown__noactive,
+.container__box-seven .days__plan.days__plan-cost .days__plan-cost-choice {
+    width: 100%;
+}
+
+.container__box-seven .days__plan.days__plan-cost input {
+    height: auto;
+}
+
+.container__box-seven .days__plan.days__plan-cost .long__stay .payment__radio {
+    margin-top: -45px;
+    margin-bottom: -20px;
+}
+
+.container__box-seven .recommended {
+    background: rgba(221, 159, 0, 0.08);
+    border-radius: 4px;
+    margin-left: 6px;
+    padding: 4px 9px;
+    font-family: "Gilroy-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #897C63;
+}
+
+.container__box-seven .days__plan.days__plan-cost .long__stay .payment__radio .label-checkbox,
+.container__box-seven .long__stay.set__your-price .payment__radio .label-checkbox {
+    align-items: flex-start;
+    max-width: 555px;
+}
+
+.days__plan.days__plan-calendar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+/* календарь */
+.calendar {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #EAF2FA;
+}
+
+
+.calendar__item {
+    position: relative;
+}
+
+.calendar #calendar {
+    max-width: 332px;
+    background: #FCFDFF;
+    border: 2px solid #EEF3F9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.calendar .fc-event {
+    cursor: pointer !important;
+    border-radius: 0 !important;
+}
+
+.calendar .fc th,
+.calendar .fc td {
+    border-style: none;
+    border-width: 0px;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+}
+
+.calendar .fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+    float: none;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+
+.calendar .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 22px;
+    padding: 0 10px;
+}
+
+.calendar .fc-dayGrid-view .fc-body .fc-row {
+    min-height: 20px;
+    max-height: 42.9px
+}
+
+.calendar .fc-scroller {
+    max-height: 260px;
+    overflow: hidden;
+}
+
+.calendar .fc-highlight {
+    background-color: #124570;
+    opacity: 0.5;
+    border-radius: 3px;
+}
+
+.calendar .reviews {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #EAF2FA;
+}
+
+.calendar .reviews .reviews__title div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.calendar .reviews__title div p {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #50575E;
+}
+
+/* календарь */
+
+.right__content .protest {
+    max-width: 360px;
+    padding: 26px 30px 28px;
+}
+
+.right__content .protest img {
+    margin-bottom: 13px;
+}
+
+.right__content .protest p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #898989;
+}
+
+.container__box-seven .btn__block {
+    max-width: 555px;
+}
+
+/* седьмое__окно-конец */
 
 
 
@@ -503,8 +785,23 @@
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .right__content {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 768px) {
+
+    /* 7 */
+    .container__box-seven .btn__block {
+        max-width: 100%;
+    }
+    .left__content{
+        margin-right: 0;
+    }
+
+    /* 7 */
     .container__box {
         margin: 0 auto;
     }
@@ -533,4 +830,35 @@
     .btn__block .btn-back {
         padding: 0 63.7px;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .container__box-seven .days__plan {
+        flex-direction: column;
+        align-items: inherit;
+    }
+    .container__box-seven .days__plan.days__plan-two .days__plan-items{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container__box-seven .days__plan.days__plan-two.days__plan-two-mb .field:first-child{
+        margin-bottom: 20px;
+    }
+    .container__box-seven .field{
+        margin-right: 0;
+    }
+    .container__box-seven .days__plan.days__plan-cost{
+        max-width: 100%;
+    }
+
+    .days__plan-text {
+        margin-top: 20px;
+    }
+    .container__box-seven .days__plan.days__plan-two .field:last-child{
+        /* margin-right: 0; */
+    }
+    .calendar #calendar{
+        margin: 0 auto;
+    }
+   
 }

@@ -8,12 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=400, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="/img/Xx..ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="">
-    <link rel="stylesheet" href="css/daterangepicker.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/add__item.css">
+    <link rel="stylesheet" href="fullcalendar/packages/core/main.css">
+    <link rel="stylesheet" href="fullcalendar/packages/daygrid/main.css">
+    <link rel="stylesheet" href="fullcalendar/packages/timegrid/main.css">
 </head>
 
 <body>
@@ -35,7 +34,7 @@
                     </a>
                 </div>
             </div>
-            <div class="progress progress__six progress-striped">
+            <div class="progress progress__seven progress-striped">
                 <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                     aria-valuemax="100" style="width: 100%">
                 </div>
@@ -44,226 +43,212 @@
 
         <div id="wrapper-content">
             <div class="container">
-                <div class="title apartaments__title">
-                    <h2>Review your guest requirements</h2>
-                    <p>Guests can only book without sending a request if they meet all your requirements and agree to
-                        your house rules.</p>
+                <div class="main__content">
+                    <div class="left__content">
+                        <div class="title apartaments__title">
+                            <h2>How much notice do you need before a guest arrives?</h2>
+                        </div>
+                        <div class="container__box container__box-seven">
+
+                            <form action="/">
+
+                                <div class="days__plan">
+
+
+                                    <div class="field field-payment">
+                                        <p class="name">Lorem ipsum</p>
+                                        <input type="text" value="2 days" class="input-select" readonly="" required="">
+                                        <div class="icon">
+                                            <img src="img/arrow-downblu.svg" alt="arrow">
+                                        </div>
+                                        <ul class="select">
+                                            <li class="select-option">3 days</li>
+                                            <li class="select-option">4 days</li>
+                                            <li class="select-option">5 days</li>
+                                            <li class="select-option">6 days</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="days__plan-text">
+                                        <h3>Tip</h3>
+                                        <p>At least 2 days’ notice can help you plan for a guest’s arrival, but you
+                                            might
+                                            miss
+                                            out
+                                            on last-minute trips.</p>
+                                    </div>
+
+
+                                </div>
+                                <div class="days__plan days__plan-two days__plan-two-mb">
+                                    <h6>When can guests check in?</h6>
+                                    <div class="days__plan-items">
+                                        <div class="field field-payment">
+                                            <p class="name">From</p>
+                                            <input type="text" value="Flexible" class="input-select" readonly=""
+                                                required="">
+                                            <div class="icon">
+                                                <img src="img/arrow-downblu.svg" alt="arrow">
+                                            </div>
+                                            <ul class="select">
+                                                <li class="select-option">Flexible</li>
+                                                <li class="select-option">Flexible1</li>
+                                                <li class="select-option">Flexible2</li>
+                                                <li class="select-option">Flexible3</li>
+                                            </ul>
+                                        </div>
+                                        <div class="field field-payment">
+                                            <p class="name">To</p>
+                                            <input type="text" value="Flexible" class="input-select" readonly=""
+                                                required="">
+                                            <div class="icon">
+                                                <img src="img/arrow-downblu.svg" alt="arrow">
+                                            </div>
+                                            <ul class="select">
+                                                <li class="select-option">Flexible</li>
+                                                <li class="select-option">Flexible1</li>
+                                                <li class="select-option">Flexible2</li>
+                                                <li class="select-option">Flexible3</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="title apartaments__title">
+                                    <h2>How far in advance can guests book?</h2>
+                                </div>
+
+                                <div class="days__plan days__plan-three">
+
+
+                                    <div class="field field-payment">
+                                        <p class="name">Lorem ipsum</p>
+                                        <input type="text" value="6 months in advance" class="input-select" readonly=""
+                                            required="">
+                                        <div class="icon">
+                                            <img src="img/arrow-downblu.svg" alt="arrow">
+                                        </div>
+                                        <ul class="select">
+                                            <li class="select-option">9 months in advance</li>
+                                            <li class="select-option">12 months in advance</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="days__plan-text">
+                                        <h3>Tip</h3>
+                                        <p>Avoid canceling or declining guests by only unblocking dates you can host.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="title apartaments__title">
+                                    <h2>How long can guests stay?</h2>
+                                </div>
+                                <div class="days__plan days__plan-cost">
+                                    <div class="days__plan-cost-choice">
+                                        <ul class="dropdown__noactive">
+                                            <li class="dropdown-item">
+                                                <p class="c-gray">Minimum nights</p>
+                                                <div class="count ">
+                                                    <button type="button" class="count-btn count-minus "></button>
+                                                    <input type="text" class="input-count count__adults" value="1"
+                                                        readonly="">
+                                                    <button type="button" class="count-btn count-plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <p class="c-gray">Maximum nights</p>
+                                                <div class="count ">
+                                                    <button type="button" class="count-btn count-minus "></button>
+                                                    <input type="text" class="input-count count__adults" value="1"
+                                                        readonly="">
+                                                    <button type="button" class="count-btn count-plus"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="long__stay">
+                                        <h6>For stays longer than 5 nights</h6>
+                                        <div class="payment__radio">
+                                            <label class="label-checkbox label-radio">
+                                                <input type="radio" name="radio" class="checkbox" checked="">
+                                                <span class="check check-radio"></span>
+                                                <span class="check-text check-radio-text">Manually review and approve
+                                                    reservation requests<span
+                                                        class="recommended">RECOMMENDED</span></span>
+                                            </label>
+                                            <label class="label-checkbox label-radio">
+                                                <input type="radio" name="radio" class="checkbox">
+                                                <span class="check check-radio"></span>
+                                                <span class="check-text check-radio-text">Don't allow reservation
+                                                    requests
+                                                    for stays longer than 5 nights
+                                                </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="title apartaments__title">
+                                    <h2>Update your calendar</h2>
+                                </div>
+                                <div class="days__plan days__plan-calendar calendar">
+                                    <h6>When can guests check in?</h6>
+
+                                    <div class="calendar__item">
+                                        <div id="calendar"></div>
+                                    </div>
+                                </div>
+
+                                <div class="title apartaments__title">
+                                    <h2>How do you want to set your price?</h2>
+                                </div>
+                                <div class="long__stay set__your-price">
+                                    <h6>Select dates to block or unblock.</h6>
+                                    <div class="payment__radio">
+                                        <label class="label-checkbox label-radio">
+                                            <input type="radio" name="radioprice" class="checkbox" checked="">
+                                            <span class="check check-radio"></span>
+                                            <span class="check-text check-radio-text">Price adapts to demand
+                                                <span class="payment__form-text">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing
+                                                    elit, sed do eiusmod tempor incididunt<span
+                                                        class="recommended">RECOMMENDED</span>
+                                                </span>
+                                        </label>
+                                        <label class="label-checkbox label-radio">
+                                            <input type="radio" name="radioprice" class="checkbox">
+                                            <span class="check check-radio"></span>
+                                            <span class="check-text check-radio-text">Price is fixed
+                                                <span class="payment__form-text">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing
+                                                    elit, sed do eiusmod tempor incididunt
+                                                </span>
+                                        </label>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="btn__block">
+                                    <a href="#" class="btn btn-red btn-back">BACK</a>
+                                    <button type="submit" class="btn btn-red">NEXT</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="right__content">
+                        <div class="protest">
+                            <img src="img/protests.svg" alt="protest">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="container__box container__box-six">
-
-                    <form action="">
-                        <div class="field field-payment">
-
-                            <div class="rules__block-set">
-                                <div class="rules__set">
-                                    <p class="counts-item">Suitable for children (2-12 years)
-                                        <span class="question">
-                                            <span class="tooltip">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Quos, accusamus libero!</span>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="popup__row">
-                                    <label class="label-checkbox label-checkbox__reject">
-                                        <input type="radio" name="lang" class="checkbox checkbox__reject">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                    <label class="label-checkbox label-checkbox__accept">
-                                        <input type="radio" name="lang" class="checkbox checkbox__accept">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="rules__block-set">
-                                <div class="rules__set">
-                                    <p class="counts-item">Suitable for infants (Under 2 years)
-                                        <span class="question">
-                                            <span class="tooltip">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Quos, accusamus libero!</span>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="popup__row">
-                                    <label class="label-checkbox label-checkbox__reject">
-                                        <input type="radio" name="lang" class="checkbox checkbox__reject">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                    <label class="label-checkbox label-checkbox__accept">
-                                        <input type="radio" name="lang" class="checkbox checkbox__accept">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="rules__block-set">
-                                <div class="rules__set">
-                                    <p class="counts-item">Suitable for pets
-                                        <span class="question">
-                                            <span class="tooltip">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Quos, accusamus libero!</span>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="popup__row">
-                                    <label class="label-checkbox label-checkbox__reject">
-                                        <input type="radio" name="lang" class="checkbox checkbox__reject">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                    <label class="label-checkbox label-checkbox__accept">
-                                        <input type="radio" name="lang" class="checkbox checkbox__accept">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="rules__block-set">
-                                <div class="rules__set">
-                                    <p class="counts-item">Smoking allowed
-                                        <span class="question">
-                                            <span class="tooltip">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Quos, accusamus libero!</span>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="popup__row">
-                                    <label class="label-checkbox label-checkbox__reject">
-                                        <input type="radio" name="lang" class="checkbox checkbox__reject">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                    <label class="label-checkbox label-checkbox__accept">
-                                        <input type="radio" name="lang" class="checkbox checkbox__accept">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="rules__block-set">
-                                <div class="rules__set">
-                                    <p class="counts-item">Events or parties allowed
-                                        <span class="question">
-                                            <span class="tooltip">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Quos, accusamus libero!</span>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="popup__row">
-                                    <label class="label-checkbox label-checkbox__reject">
-                                        <input type="radio" name="lang" class="checkbox checkbox__reject">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                    <label class="label-checkbox label-checkbox__accept">
-                                        <input type="radio" name="lang" class="checkbox checkbox__accept">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="rules__block-set">
-                                <div class="rules__set">
-                                    <p class="counts-item">No shoes in the house
-                                        <span class="question">
-                                            <span class="tooltip">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit. Quos, accusamus libero!</span>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="popup__row">
-                                    <label class="label-checkbox label-checkbox__reject">
-                                        <input type="radio" name="lang" class="checkbox checkbox__reject">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                    <label class="label-checkbox label-checkbox__accept">
-                                        <input type="radio" name="lang" class="checkbox checkbox__accept">
-                                        <span class="check"></span>
-                                        <span class="check-text"></span>
-                                    </label>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="rules__block-set rules__block-set-add">
-
-                                <div class="list"></div>
-
-                            </div>
-
-
-
-                        </div>
-
-                        <div class="add__items-list">
-
-                            <div class="form-add-delete">
-                                <div name="checkListForm">
-                                    <label class="add-delete">
-                                        <input class="input-select" type="text" name="checkListItem"
-                                            placeholder="Additional rules" autocomplete="none" />
-                                    </label>
-                                </div>
-                                <btn class="button__add">Add</btn>
-                                <div id="note"></div>
-
-                            </div>
-
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                        <div class="some__text">
-                            <p>Details guests must know about your home</p>
-                        </div>
-
-                        <div class="checkbox__add">
-                            <label class="label-checkbox">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="check-text">Must climb stairs</span>
-                            </label>
-                            <label class="label-checkbox">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="check-text">Potential for noise</span>
-                            </label>
-                            <label class="label-checkbox">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="check-text">Pet(s) live on property</span>
-                            </label>
-                            <label class="label-checkbox">
-                                <input type="checkbox" class="checkbox">
-                                <span class="check"></span>
-                                <span class="check-text">No parking on property</span>
-                            </label>
-                        </div>
-
-                        <div class="btn__block">
-                            <a href="#" class="btn btn-red btn-back">BACK</a>
-                            <button type="submit" class="btn btn-red">NEXT</button>
-                        </div>
-                    </form>
-
-                </div>
-
-
-
 
 
 
@@ -540,6 +525,14 @@
         </div>
     </div>
 
+    <script src="fullcalendar/vendor/rrule.js"></script>
+    <script src="fullcalendar/packages/core/main.js"></script>
+    <script src="fullcalendar/packages/interaction/main.js"></script>
+    <script src="fullcalendar/packages/daygrid/main.js"></script>
+    <script src="fullcalendar/packages/timegrid/main.js"></script>
+    <script src="fullcalendar/packages/interaction/main.js"></script>
+    <script src="fullcalendar/packages/list/main.js"></script>
+    <script src="fullcalendar/packages/core/locales/ru.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.inputmask.bundle.js"></script>

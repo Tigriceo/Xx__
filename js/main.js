@@ -324,7 +324,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //второй календарь
 
-// Добавить/Удалить__элементы
+// Добавить/Удалить__элементы(add__item-five.html)
     $(".button__add").click(function () {
         var $toAdd = $("input[name=checkListItem]").val();
         $(".list").append('<div class="item"><div class="item-close">' + $toAdd + '</div></div>');
