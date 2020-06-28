@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Добавление квартиры</title>
+    <meta name="description" content="Xx">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=400, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/img/Xx..ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/add__item.css">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <!-- preloader -->
+    <div id="wrapper">
+        <!-- header.html -->
+        <header class="header header-main">
+            <div class="container container__heder">
+                <div class="header__between">
+                    <a href="#" class="logo">Xx
+                        <span class="logo-span">.</span>
+                    </a>
+                </div>
+            </div>
+            <div class="progress progress__eight progress-striped">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 100%">
+                </div>
+            </div>
+        </header>
+
+        <div id="wrapper-content">
+            <div class="container">
+                <div class="main__content main__content-eight">
+                    <div class="left__content">
+                        <div class="title apartaments__title">
+                            <h2>Price Your Space</h2>
+                        </div>
+                        <div class="container__box container__box-eight">
+
+                            <form action="/">
+                                <div class="top__block">
+                                    <div class="small__title">
+                                        <h4>Increase your chances of getting booked</h4>
+                                        <p>Set up Smart Pricing to automatically keep your nightly prices competitive as
+                                            demand in
+                                            your area changes.</p>
+                                        <h3>Set up Smart Pricing<span class="recommended">RECOMMENDED</span></h3>
+                                    </div>
+                                    <div class="choice__price">
+
+                                        <div class="choice__price-item base__price">
+                                            <div class="price-item-title">
+                                                <h3>Base price</h3>
+                                                <p>This will be your default price for days when you decide to turn off
+                                                    Smart Pricing.</p>
+
+                                                <div class="price-item-main">
+                                                    <div class="field feld-payment">
+                                                        <input type="text" value="$ 123" placeholder="$"
+                                                            class="input-select">
+                                                    </div>
+
+                                                    <div class="days__plan-text price-item-tip">
+                                                        <h3>Tip: $ 123</h3>
+                                                        <span class="question">
+                                                            <span class="tooltip">Lorem ipsum dolor sit amet
+                                                                consectetur adipisicing
+                                                                elit. Quos, accusamus libero!</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="choice__price-item minimum__price">
+                                            <div class="price-item-title">
+                                                <h3>Minimum price</h3>
+                                                <p>When demand for your space is low, nightly prices will drop to
+                                                    attract
+                                                    more guests to book. What’s the lowest price you’re comfortable
+                                                    with?
+                                                </p>
+
+                                                <div class="price-item-main">
+                                                    <div class="field feld-payment" id="dis1">
+                                                        <input type="text" value="$ 123" placeholder="$"
+                                                            class="input-select">
+                                                    </div>
+
+                                                    <div class="days__plan-text price-item-tip">
+                                                        <h3>Tip: $ 123</h3>
+                                                        <span class="question">
+                                                            <span class="tooltip">Lorem ipsum dolor sit amet
+                                                                consectetur adipisicing
+                                                                elit. Quos, accusamus libero!</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="choice__price-item maximum__price">
+                                            <div class="price-item-title">
+                                                <h3>Maximum price</h3>
+                                                <p>If demand is high, e.g. if there’s a popular festival in town, what’s
+                                                    the highest price you’re willing to charge guests per night?</p>
+
+                                                <div class="price-item-main">
+                                                    <div class="field feld-payment" id="dis1">
+                                                        <input type="text" value="$ 123" placeholder="$"
+                                                            class="input-select">
+                                                    </div>
+
+                                                    <div class="days__plan-text price-item-tip">
+                                                        <h3>Tip: $ 123</h3>
+                                                        <span class="question">
+                                                            <span class="tooltip">Lorem ipsum dolor sit amet
+                                                                consectetur adipisicing
+                                                                elit. Quos, accusamus libero!</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+                                    </div>
+                                    <div class="currency__selection">
+                                        <div class="field field-payment">
+                                            <p class="name">Currency</p>
+                                            <input type="text" value="USD United States dollar" class="input-select"
+                                                readonly="" required="">
+                                            <div class="icon">
+                                                <img src="img/arrow-downblu.svg" alt="arrow">
+                                            </div>
+                                            <ul class="select">
+                                                <li class="select-option">USD United States dollar11</li>
+                                                <li class="select-option">USD United States dollar22</li>
+                                            </ul>
+                                        </div>
+                                        <p class="currency__text">You’re always in control of your nightly price. By
+                                            continuing, you agree to turn
+                                            on Smart Pricing. You can change this later in settings.</p>
+                                    </div>
+
+                                    <div class="use__base-price">
+                                        <label>
+                                            <span>use base price only</span>
+                                            <input type="checkbox" onchange="javascript:toggleBilling()" checked>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="center__block">
+                                    <div class="title apartaments__title">
+                                        <h2>Something special for your first guests</h2>
+                                    </div>
+
+                                    <div class="payment__radio">
+                                        <label class="label-checkbox label-radio">
+                                            <input type="radio" name="radioprice" class="checkbox" checked="">
+                                            <span class="check check-radio"></span>
+                                            <span class="check-text check-radio-text">Offer 20% off to your first
+                                                guests<span class="recommended">RECOMMENDED</span>
+                                                <span class="payment__form-text">The first 3 guests who book your place
+                                                    will get 20% off the nightly price. This special offer can attract
+                                                    new guests, and help you get the 3 reviews you need for a star
+                                                    rating.
+                                                </span>
+                                            </span></label>
+                                        <label class="label-checkbox label-radio">
+                                            <input type="radio" name="radioprice" class="checkbox">
+                                            <span class="check check-radio"></span>
+                                            <span class="check-text check-radio-text">Don’t add a special offer
+                                                <span class="payment__form-text">Once you publish your listing, you
+                                                    won’t be able to add this offer.
+                                                </span>
+                                            </span></label>
+                                    </div>
+                                </div>
+
+                                <div class="bottom__block">
+                                    <div class="title apartaments__title">
+                                        <h2>Length-of-stay prices</h2>
+                                        <div class="title__link">
+                                            <p>Encourage travelers to book longer stays by offering a discount.</p>
+                                            <a href="#">Learn More</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="choice__price-item base__price">
+                                        <div class="price-item-title">
+                                            <h3>Weekly discount</h3>
+
+                                            <div class="price-item-main">
+                                                <div class="field feld-payment">
+                                                    <input type="text" value="0% OFF" class="input-select">
+                                                </div>
+
+                                                <div class="days__plan-text price-item-tip">
+                                                    <h3>Tip: 21 %</h3>
+                                                    <span class="question">
+                                                        <span class="tooltip">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing
+                                                            elit. Quos, accusamus libero!</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <p>Travelers often search by price. To help increase your chances of getting
+                                                weekly stays, try setting a discount.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="choice__price-item base__price">
+                                        <div class="price-item-title">
+                                            <h3>Monthly discount</h3>
+
+                                            <div class="price-item-main">
+                                                <div class="field feld-payment">
+                                                    <input type="text" value="0% OFF" class="input-select">
+                                                </div>
+
+                                                <div class="days__plan-text price-item-tip">
+                                                    <h3>Tip: 21 %</h3>
+                                                    <span class="question">
+                                                        <span class="tooltip">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing
+                                                            elit. Quos, accusamus libero!</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <p>Travelers often search by price. To help increase your chances of getting
+                                                weekly stays, try setting a discount.</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="btn__block">
+                                    <a href="#" class="btn btn-red btn-back">BACK</a>
+                                    <button type="submit" class="btn btn-red">NEXT</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="right__content">
+
+                        <div class="protest protest__slider">
+                            <img src="img/protests.svg" alt="protest">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+
+                            <div class="slider__two">
+
+                                <div class="slider__item">
+                                    <div class="slider__price">
+                                        <div class="slider__price-title">Mon</div>
+                                        <div class="slider__price-text">$ 123</div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__price">
+                                        <div class="slider__price-title">Tue</div>
+                                        <div class="slider__price-text">$ 123</div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__price">
+                                        <div class="slider__price-title">Wed</div>
+                                        <div class="slider__price-text">$ 123</div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__price">
+                                        <div class="slider__price-title">Thu</div>
+                                        <div class="slider__price-text">$ 123</div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__price">
+                                        <div class="slider__price-title">Fri</div>
+                                        <div class="slider__price-text">$ 123</div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__price">
+                                        <div class="slider__price-title">Sat</div>
+                                        <div class="slider__price-text">$ 123</div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__price">
+                                        <div class="slider__price-title">Sun</div>
+                                        <div class="slider__price-text">$ 123</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="protest protest__fixed">
+                            <img src="img/protests.svg" alt="protest">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col">
+                        <div class="footer-top__row">
+                            <a href="#" class="logo">Xx
+                                <span class="logo-span">.</span>
+                            </a>
+                            <div class="footer__row">
+                                <a href="#" class="footer__select">$ USD
+                                    <svg class="footer__select-arrow">
+                                        <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__select">ru
+                                    <svg class="footer__select-arrow">
+                                        <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </footer>
+        <div>
+            <div class="popups popup__lang-curr">
+                <div class="popup">
+                    <div class="popup__head">
+                        <h2 class="popup__head-title">Язык и Валюта</h2>
+                        <button type="button" class="close"></button>
+                    </div>
+                    <div class="popup-content">
+                        <div class="popup__section">
+                            <h4 class="popup__title">Валюта</h4>
+                            <div class="popup__row">
+                                <label class="label-checkbox">
+                                    <input type="radio" name="curr" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">EUR</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="curr" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">USD</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="curr" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">AZN</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="curr" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">UAH</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="curr" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">RUB</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="curr" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">BEL</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="curr" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">GEO</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="curr" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">EAD</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="popup__section">
+                            <h4 class="popup__title">Язык</h4>
+                            <div class="popup__row">
+                                <label class="label-checkbox">
+                                    <input type="radio" name="lang" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Английский</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="lang" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Французский</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="lang" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Немецкий</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="lang" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Японский</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="popup__bottom">
+                            <a href="#" class="btn btn-small">SAVE CHANGES
+                                <svg class="arrow">
+                                    <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popups popup__additional-filters">
+                <div class="popup positionTop">
+                    <div class="popup__head">
+                        <h2 class="popup__head-title">Дополнительные фильтры</h2>
+                        <button type="button" class="close"></button>
+                    </div>
+                    <form class="popup-content">
+                        <div class="popup__section">
+                            <label class="label-checkbox">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="check-text">Возможность отмены</span>
+                            </label>
+                            <label class="label-checkbox">
+                                <input type="checkbox" class="checkbox">
+                                <span class="check"></span>
+                                <span class="check-text">Опытный хозяин
+                                    <span class="check-span"> Останавливайтесь у самых гостеприимных хозяев <a href="#"
+                                            class="c-blue">Подробнее</a></span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="popup__section">
+                            <h4 class="popup__title">Удобства</h4>
+                            <div class="popup__row">
+                                <label class="label-checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Кухня</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Шампунь</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Отопление</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Кондиционер</span>
+                                </label>
+                            </div>
+                            <a href="#" class="link-item">Все удобства
+                                <svg class="arrow c-blue">
+                                    <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="popup__section">
+                            <h4 class="popup__title">Дополнительные удобства</h4>
+                            <div class="popup__row">
+                                <label class="label-checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Бесплатная <br>парковка</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Спортзал</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Джакузи</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Бассейн</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="popup__section">
+                            <h4 class="popup__title">Цена</h4>
+                            <div class="popup__row">
+                                <div class="popup__price">
+                                    <p>От</p>
+                                    <input type="number" class="popup__input">
+                                </div>
+                                <div class="popup__price">
+                                    <p>До</p>
+                                    <input type="number" class="popup__input">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="popup__section">
+                            <h4 class="popup__title">Язык хозяина</h4>
+                            <div class="popup__row">
+                                <label class="label-checkbox">
+                                    <input type="radio" name="lang" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Английский</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="lang" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Французский</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="lang" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Немецкий</span>
+                                </label>
+                                <label class="label-checkbox">
+                                    <input type="radio" name="lang" class="checkbox">
+                                    <span class="check"></span>
+                                    <span class="check-text">Японский</span>
+                                </label>
+                            </div>
+                            <a href="#" class="link-item">все языки
+                                <svg class="arrow c-blue">
+                                    <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="popup__bottom popup__bottom__between">
+                            <button type="reset" class="link-item">очистить <span class="close"></span></button>
+                            <button type="submit" class="btn btn-small">показать варианты
+                                <svg class="arrow">
+                                    <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="error" id="error">
+            <div class="error__head">
+                <p class="text-15 c-blue">ОШИБКА title </p>
+                <button type="button" class="close"></button>
+            </div>
+            <ul class="error-list">
+                <li class="error-item">• Аккаунт с таким номер уже зарегестирован в системе. Если это ваш номер, вы
+                    можете
+                    <a href="#" class="error-link">восстановить аккунт здесь.</a>
+                </li>
+                <li class="error-item">• Длина пароля должна быть не менее 6 символов.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.inputmask.bundle.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.daterangepicker.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

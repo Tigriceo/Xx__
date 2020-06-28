@@ -1,11 +1,11 @@
 //  preloader
- window.onload = function () {
-     document.body.classList.add('loaded_hiding');
-     window.setTimeout(function () {
-         document.body.classList.add('loaded');
-         document.body.classList.remove('loaded_hiding');
-     }, 500);
- }
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 500);
+}
 //  preloader
 
 
@@ -325,19 +325,25 @@ document.addEventListener("DOMContentLoaded", function () {
 //второй календарь
 
 // Добавить/Удалить__элементы(add__item-five.html)
-    $(".button__add").click(function () {
-        var $toAdd = $("input[name=checkListItem]").val();
-        $(".list").append('<div class="item"><div class="item-close">' + $toAdd + '</div></div>');
-    });
-    //instead of using .click to remove use document on click.
-    //click is the event, .item is the selector
-    $(document).on('click', '.item', function () {
-        $(this).remove();
-    });
+$(".button__add").click(function () {
+    var $toAdd = $("input[name=checkListItem]").val();
+    $(".list").append('<div class="item"><div class="item-close">' + $toAdd + '</div></div>');
+});
+//instead of using .click to remove use document on click.
+//click is the event, .item is the selector
+$(document).on('click', '.item', function () {
+    $(this).remove();
+});
 
 // Добавить/Удалить__элементы
 
-
+function toggleBilling() {
+    var billingItems = document.querySelectorAll('#dis1 input[type="text"]');
+    for (var i = 0; i < billingItems.length; i++) {
+        billingItems[i].disabled = !billingItems[i].disabled;
+    }
+}
+// Добавить/Удалить__элементы
 
 
 
@@ -444,7 +450,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // галерея__модальное__окно
 
-//slick__slider-начала
+//slick__slider-начала(главная)
 $(document).ready(function () {
     $('.slider').slick({
         arrows: true,
@@ -468,6 +474,34 @@ $(document).ready(function () {
         ]
     });
 });
+//slick__slider-конец(главная)
+//slick__slider-начала(главная)
+$(document).ready(function () {
+    $('.slider__two').slick({
+        arrows: true,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+
+        // autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 800,
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+});
+//slick__slider-конец(главная)
 
 
 //адаптив__к_мобильной__версии__слайдера-начало
@@ -482,4 +516,3 @@ $(document).ready(function () {
 });
 //адаптив__к_мобильной__версии__слайдера-конец
 //slick__slider-конец
-
