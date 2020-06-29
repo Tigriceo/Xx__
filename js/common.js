@@ -37,7 +37,7 @@ $(document).ready(function () {
          $(".dropdown__first").addClass('active');
      });
 
-    $(".count-minus").click(function () {
+    $(document).on('click', '.count-minus', function() {
         let $input = $(this).parent().find("input");
         let count = parseInt($input.val() - 1);
 
@@ -55,7 +55,8 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.count-plus').click(function () {
+    $(document).on('click', '.count-plus', function () {
+        console.log('ok')
         let $input = $(this).parent().find('.input-count');
         $input.val(parseInt($input.val()) + 1);
         let count = parseInt($input.val());
@@ -63,7 +64,7 @@ $(document).ready(function () {
         $input.val(count);
         $input.change();
         return false;
-    });
+    })
 
     $(".input-count").change( function () {
         let a = parseInt($(".count__adults").val());
