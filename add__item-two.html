@@ -44,7 +44,7 @@
                     <h2>How many guests can your place accommodate?</h2>
                     <p>Check that you have enough beds to accommodate all your guests comfortably.</p>
                 </div>
-                <div class="container__box">
+                <div class="container__box container__box-two">
 
                     <form class="choice" action="/">
 
@@ -60,16 +60,18 @@
                             <li class="dropdown-item">
                                 <p class="c-gray">Спален</p>
                                 <div class="count">
-                                    <button type="button" class="count-btn count-minus "></button>
-                                    <input type="text" class="input-count count__children" value="1" readonly="">
-                                    <button type="button" class="count-btn count-plus"></button>
+                                    <button type="button" class="count-btn count-minus minus__bedroom"
+                                        onclick="delInput()"></button>
+                                    <input type="text" class="input-count count__adults" value="1" readonly="">
+                                    <button type="button" class="count-btn count-plus plus__bedroom"
+                                        onclick="addInput()"></button>
                                 </div>
                             </li>
                             <li class="dropdown-item">
                                 <p class="c-gray">Ванных комнат</p>
                                 <div class="count">
                                     <button type="button" class="count-btn count-minus "></button>
-                                    <input type="text" class="input-count count__children" value="1" readonly="">
+                                    <input type="text" class="input-count count__adults" value="1" readonly="">
                                     <button type="button" class="count-btn count-plus"></button>
                                 </div>
                             </li>
@@ -79,6 +81,122 @@
                             <p>Sharing the types of beds in each room can help people understand the sleeping
                                 arrangements.</p>
                         </div>
+                        <div class="sleeping__arrangements">
+                            <div class="add__remove">
+                                <div id="bedroom__code">
+                                    <div class="sleeping__arrangements-item">
+                                        <div class="sleeping__arrangements-title">
+                                            <p>Bedroom 1</p>
+                                        </div>
+                                        <ul class="dropdown__noactive">
+                                            <li class="dropdown-item">
+                                                <p class="c-gray">Double (King)</p>
+                                                <div class="count">
+                                                    <button type="button" class="count-btn count-minus "></button>
+                                                    <input type="text" class="input-count count__adults" value="1"
+                                                        readonly="">
+                                                    <button type="button" class="count-btn count-plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <p class="c-gray">Double (Queen)</p>
+                                                <div class="count">
+                                                    <button type="button" class="count-btn count-minus "></button>
+                                                    <input type="text" class="input-count count__children" value="0"
+                                                        readonly="">
+                                                    <button type="button" class="count-btn count-plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <p class="c-gray">Single</p>
+                                                <div class="count">
+                                                    <button type="button" class="count-btn count-minus "></button>
+                                                    <input type="text" class="input-count count__children" value="0"
+                                                        readonly="">
+                                                    <button type="button" class="count-btn count-plus"></button>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <p class="c-gray">Sofa</p>
+                                                <div class="count">
+                                                    <button type="button" class="count-btn count-minus "></button>
+                                                    <input type="text" class="input-count count__children" value="0"
+                                                        readonly="">
+                                                    <button type="button" class="count-btn count-plus"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="sleeping__arrangements-item">
+                                <div class="sleeping__arrangements-title">
+                                    <p>Common spaces</p>
+                                </div>
+                                <ul class="dropdown__noactive dropdown__noactive-two">
+                                    <li class="dropdown-item">
+                                        <p class="c-gray">Double (King)</p>
+                                        <div class="count">
+                                            <button type="button" class="count-btn count-minus "></button>
+                                            <input type="text" class="input-count count__adults" value="1" readonly="">
+                                            <button type="button" class="count-btn count-plus"></button>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <p class="c-gray">Double (Queen)</p>
+                                        <div class="count">
+                                            <button type="button" class="count-btn count-minus "></button>
+                                            <input type="text" class="input-count count__children" value="0"
+                                                readonly="">
+                                            <button type="button" class="count-btn count-plus"></button>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <p class="c-gray">Single</p>
+                                        <div class="count">
+                                            <button type="button" class="count-btn count-minus "></button>
+                                            <input type="text" class="input-count count__children" value="0"
+                                                readonly="">
+                                            <button type="button" class="count-btn count-plus"></button>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <p class="c-gray">Sofa</p>
+                                        <div class="count">
+                                            <button type="button" class="count-btn count-minus "></button>
+                                            <input type="text" class="input-count count__children" value="0"
+                                                readonly="">
+                                            <button type="button" class="count-btn count-plus"></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         <div class="btn__block">
                             <a href="#" class="btn btn-red btn-back">BACK</a>

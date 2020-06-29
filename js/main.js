@@ -62,21 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             center: "title",
             right: "btnReload,dayGridMonth"
         },
-        // header: {
-        //     left: "prevYear,prev,next,nextYear, today",
-        //     center: "title",
-        //     right: "dayGridMonth,listWeek,listDay, btnReload"
-        // },
 
-        /* HEADER */
-
-        // header: {
-        //  left: "prev,next today",
-        //  center: "title",
-        //  right: "dayGridMonth,timeGridWeek,timeGridDay"
-        // },
-
-        /* HEADER */
         views: {
             listDay: {
                 buttonText: "День"
@@ -324,6 +310,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //второй календарь
 
+
 // Добавить/Удалить__элементы(add__item-five.html)
 $(".button__add").click(function () {
     var $toAdd = $("input[name=checkListItem]").val();
@@ -334,16 +321,41 @@ $(".button__add").click(function () {
 $(document).on('click', '.item', function () {
     $(this).remove();
 });
+// Добавить/Удалить__элементы(add__item-five.html)
 
-// Добавить/Удалить__элементы
 
+
+// Добавить/Удалить__input
+var x = 0;
+
+function addInput() {
+    var profile = document.getElementById('bedroom__code');
+    var div = document.createElement('div');
+    div.id = 'input' + ++x;
+    div.innerHTML = '<div class="sleeping__arrangements-item sleeping__arrangements-add"><div class="sleeping__arrangements-title"><p>Bedroom 1</p></div><ul class="dropdown__noactive"><li class="dropdown-item"><p class="c-gray">Double(King)</p><div class="count"><button type="button" class="count-btn count-minus"></button><input type="text" class="input-count count__adults"value="1"readonly=""><button type="button" class="count-btn count-plus"></button></div></li><li class="dropdown-item"><p class="c-gray">Double(Queen)</p><div class="count"><button type="button" class="count-btn count-minus"></button><input type="text" class="input-count count__adults"value="0"readonly=""><button type="button" class="count-btn count-plus"></button></div></li><li class="dropdown-item"><p class="c-gray">Single</p><div class="count"><button type="button" class="count-btn count-minus"></button><input type="text" class="input-count count__adults"value="0"readonly=""><button type="button" class="count-btn count-plus"></button></div></li><li class="dropdown-item"><p class="c-gray">Sofa</p><div class="count"><button type="button" class="count-btn count-minus"></button><input type="text" class="input-count count__adults"value="0"readonly=""><button type="button" class="count-btn count-plus"></button></div></li></ul></div>';
+    profile.appendChild(div);
+}
+
+function delInput() {
+    var div = document.getElementById('input' + x);
+    div.remove();
+    --x;
+}
+// Добавить/Удалить__input
+
+
+
+
+
+
+// активные/не_активные__элементы(шаг8)
 function toggleBilling() {
     var billingItems = document.querySelectorAll('#dis1 input[type="text"]');
     for (var i = 0; i < billingItems.length; i++) {
         billingItems[i].disabled = !billingItems[i].disabled;
     }
 }
-// Добавить/Удалить__элементы
+// активные/не_активные__элементы(шаг8)
 
 
 
@@ -359,6 +371,7 @@ $('.like-btn').on('mouseout', function () {
     $(this).removeClass('block');
 });
 // like__btn
+
 
 
 //акардеон
