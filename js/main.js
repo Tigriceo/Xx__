@@ -8,8 +8,6 @@ window.onload = function () {
 }
 //  preloader
 
-
-
 ///главный__календарь
 console.clear();
 
@@ -31,8 +29,6 @@ $(window).resize(function () {
 
 alterClass(); //Fire it when the page first loads:
 
-// https://fullcalendar.io/docs/getting-started
-// https://fullcalendar.io/docs/initialize-globals-demo
 document.addEventListener("DOMContentLoaded", function () {
     var calendarEl = document.getElementById("calendar");
 
@@ -43,13 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
         locale: "ru",
         selectable: true,
         height: 450,
-
-
-
-        // plugins: ["interaction", "dayGrid", "timeGrid"],
-        // defaultView: "dayGridMonth",
-
-
         editable: false,
         navLinks: false,
 
@@ -170,11 +159,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     calendar.render();
 });
-
 //главный__календарь
+
 //второй__календарь
-// https://fullcalendar.io/docs/getting-started
-// https://fullcalendar.io/docs/initialize-globals-demo
+
 document.addEventListener("DOMContentLoaded", function () {
     var calendarEl = document.getElementById("calendar-two");
 
@@ -185,7 +173,6 @@ document.addEventListener("DOMContentLoaded", function () {
         locale: "ru",
         selectable: true,
         height: 450,
-
         editable: false,
         navLinks: false,
 
@@ -324,7 +311,6 @@ $(document).on('click', '.item', function () {
 // Добавить/Удалить__элементы(add__item-five.html)
 
 
-
 // Добавить/Удалить__input
 var x = 0;
 
@@ -343,11 +329,6 @@ function delInput() {
 }
 // Добавить/Удалить__input
 
-
-
-
-
-
 // активные/не_активные__элементы(шаг8)
 function toggleBilling() {
     var billingItems = document.querySelectorAll('#dis1 input[type="text"]');
@@ -356,10 +337,6 @@ function toggleBilling() {
     }
 }
 // активные/не_активные__элементы(шаг8)
-
-
-
-
 
 
 // like__btn
@@ -371,7 +348,6 @@ $('.like-btn').on('mouseout', function () {
     $(this).removeClass('block');
 });
 // like__btn
-
 
 
 //акардеон
@@ -435,16 +411,6 @@ $('.like-btn').on('mouseout', function () {
     }
 })();
 //акардеон
-
-
-
-
-
-
-
-
-
-
 
 
 // галерея__модальное__окно
@@ -515,7 +481,6 @@ $(document).ready(function () {
     });
 });
 //slick__slider-конец(главная)
-
 
 //адаптив__к_мобильной__версии__слайдера-начало
 $(document).ready(function () {

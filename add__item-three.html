@@ -12,10 +12,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="">
-  <link data-n-head="ssr" rel="stylesheet"
-    href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"> -->
+  <link data-n-head="ssr" rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css">
   </script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/add__item.css">
@@ -23,14 +20,7 @@
 
 
 <body>
-  <!-- preloader -->
-  <div class="preloader">
-    <div class="preloader__row">
-      <div class="preloader__item"></div>
-      <div class="preloader__item"></div>
-    </div>
-  </div>
-  <!-- preloader -->
+
   <div id="wrapper">
     <!-- header.html -->
     <header class="header header-main">
@@ -101,7 +91,7 @@
                 guests will see this, so they know how to get to your place.</p>
             </div>
             <!-- map -->
-            <div class="adress__item">
+            <!-- <div class="adress__item">
               <div class="row__adress__item">
                 <h3>Координаты</h3>
               </div>
@@ -139,283 +129,310 @@
               </div>
               <div class="main__map-pin">
                 <div id="mapid"></div>
+              </div> -->
+            <div class="adress__item">
+              <div class="adress__item-block">
+                <h3>Координаты/coordinates</h3>
+                <div class="row__adress__item">
+                  <!-- координаты__широты -->
+                  <div class="form-group">
+                    <label for="latitude">Широта/latitude</label>
+                    <input type="text" class="form-control" name="latitude" id="latitude" placeholder="Ex: 40.377481"
+                      value="40.377481" />
+                  </div>
+                  <!-- координаты__широты -->
+                  <!-- координаты__долготы -->
+                  <div class="form-group">
+                    <label for="longitude">Долгота/longitude</label>
+                    <input type="text" class="form-control" name="longitude" id="longitude" placeholder="Ex: 49.850581"
+                      value="49.850581" />
+                  </div>
+                  <!-- координаты__долготы -->
+                </div>
+              </div>
+
+              <div class="main__map-pin">
+                <div id="mapid"></div>
               </div>
               <!-- map -->
-            </div>
-            <div class="btn__block">
-              <a href="#" class="btn btn-red btn-back">BACK</a>
-              <button type="submit" class="btn btn-red">NEXT</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="col">
-            <div class="footer-top__row">
-              <a href="#" class="logo">Xx
-                <span class="logo-span">.</span>
-              </a>
-              <div class="footer__row">
-                <a href="#" class="footer__select">$ USD
-                  <svg class="footer__select-arrow">
-                    <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
-                  </svg>
-                </a>
-                <a href="#" class="footer__select">ru
-                  <svg class="footer__select-arrow">
-                    <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
-                  </svg>
-                </a>
+              <div class="btn__block">
+                <a href="#" class="btn btn-red btn-back">BACK</a>
+                <button type="submit" class="btn btn-red">NEXT</button>
               </div>
-            </div>
-
-
-          </div>
-
-
-
-        </div>
-      </div>
-
-    </footer>
-    <div>
-      <div class="popups popup__lang-curr">
-        <div class="popup">
-          <div class="popup__head">
-            <h2 class="popup__head-title">Язык и Валюта</h2>
-            <button type="button" class="close"></button>
-          </div>
-          <div class="popup-content">
-            <div class="popup__section">
-              <h4 class="popup__title">Валюта</h4>
-              <div class="popup__row">
-                <label class="label-checkbox">
-                  <input type="radio" name="curr" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">EUR</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="curr" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">USD</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="curr" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">AZN</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="curr" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">UAH</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="curr" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">RUB</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="curr" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">BEL</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="curr" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">GEO</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="curr" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">EAD</span>
-                </label>
-              </div>
-            </div>
-            <div class="popup__section">
-              <h4 class="popup__title">Язык</h4>
-              <div class="popup__row">
-                <label class="label-checkbox">
-                  <input type="radio" name="lang" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Английский</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="lang" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Французский</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="lang" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Немецкий</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="lang" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Японский</span>
-                </label>
-              </div>
-            </div>
-            <div class="popup__bottom">
-              <a href="#" class="btn btn-small">SAVE CHANGES
-                <svg class="arrow">
-                  <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="popups popup__additional-filters">
-        <div class="popup positionTop">
-          <div class="popup__head">
-            <h2 class="popup__head-title">Дополнительные фильтры</h2>
-            <button type="button" class="close"></button>
-          </div>
-          <form class="popup-content">
-            <div class="popup__section">
-              <label class="label-checkbox">
-                <input type="checkbox" class="checkbox">
-                <span class="check"></span>
-                <span class="check-text">Возможность отмены</span>
-              </label>
-              <label class="label-checkbox">
-                <input type="checkbox" class="checkbox">
-                <span class="check"></span>
-                <span class="check-text">Опытный хозяин
-                  <span class="check-span"> Останавливайтесь у самых гостеприимных хозяев <a href="#"
-                      class="c-blue">Подробнее</a></span>
-                </span>
-              </label>
-            </div>
-            <div class="popup__section">
-              <h4 class="popup__title">Удобства</h4>
-              <div class="popup__row">
-                <label class="label-checkbox">
-                  <input type="checkbox" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Кухня</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="checkbox" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Шампунь</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="checkbox" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Отопление</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="checkbox" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Кондиционер</span>
-                </label>
-              </div>
-              <a href="#" class="link-item">Все удобства
-                <svg class="arrow c-blue">
-                  <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="popup__section">
-              <h4 class="popup__title">Дополнительные удобства</h4>
-              <div class="popup__row">
-                <label class="label-checkbox">
-                  <input type="checkbox" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Бесплатная <br>парковка</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="checkbox" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Спортзал</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="checkbox" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Джакузи</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="checkbox" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Бассейн</span>
-                </label>
-              </div>
-            </div>
-            <div class="popup__section">
-              <h4 class="popup__title">Цена</h4>
-              <div class="popup__row">
-                <div class="popup__price">
-                  <p>От</p>
-                  <input type="number" class="popup__input">
-                </div>
-                <div class="popup__price">
-                  <p>До</p>
-                  <input type="number" class="popup__input">
-                </div>
-
-              </div>
-            </div>
-            <div class="popup__section">
-              <h4 class="popup__title">Язык хозяина</h4>
-              <div class="popup__row">
-                <label class="label-checkbox">
-                  <input type="radio" name="lang" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Английский</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="lang" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Французский</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="lang" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Немецкий</span>
-                </label>
-                <label class="label-checkbox">
-                  <input type="radio" name="lang" class="checkbox">
-                  <span class="check"></span>
-                  <span class="check-text">Японский</span>
-                </label>
-              </div>
-              <a href="#" class="link-item">все языки
-                <svg class="arrow c-blue">
-                  <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="popup__bottom popup__bottom__between">
-              <button type="reset" class="link-item">очистить <span class="close"></span></button>
-              <button type="submit" class="btn btn-small">показать варианты
-                <svg class="arrow">
-                  <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
-                </svg>
-              </button>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <div class="error" id="error">
-      <div class="error__head">
-        <p class="text-15 c-blue">ОШИБКА title </p>
-        <button type="button" class="close"></button>
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="col">
+          <div class="footer-top__row">
+            <a href="#" class="logo">Xx
+              <span class="logo-span">.</span>
+            </a>
+            <div class="footer__row">
+              <a href="#" class="footer__select">$ USD
+                <svg class="footer__select-arrow">
+                  <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__select">ru
+                <svg class="footer__select-arrow">
+                  <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
       </div>
-      <ul class="error-list">
-        <li class="error-item">• Аккаунт с таким номер уже зарегестирован в системе. Если это ваш номер, вы
-          можете
-          <a href="#" class="error-link">восстановить аккунт здесь.</a>
-        </li>
-        <li class="error-item">• Длина пароля должна быть не менее 6 символов.</li>
-      </ul>
     </div>
+
+  </footer>
+  <div>
+    <div class="popups popup__lang-curr">
+      <div class="popup">
+        <div class="popup__head">
+          <h2 class="popup__head-title">Язык и Валюта</h2>
+          <button type="button" class="close"></button>
+        </div>
+        <div class="popup-content">
+          <div class="popup__section">
+            <h4 class="popup__title">Валюта</h4>
+            <div class="popup__row">
+              <label class="label-checkbox">
+                <input type="radio" name="curr" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">EUR</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="curr" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">USD</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="curr" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">AZN</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="curr" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">UAH</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="curr" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">RUB</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="curr" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">BEL</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="curr" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">GEO</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="curr" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">EAD</span>
+              </label>
+            </div>
+          </div>
+          <div class="popup__section">
+            <h4 class="popup__title">Язык</h4>
+            <div class="popup__row">
+              <label class="label-checkbox">
+                <input type="radio" name="lang" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Английский</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="lang" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Французский</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="lang" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Немецкий</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="lang" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Японский</span>
+              </label>
+            </div>
+          </div>
+          <div class="popup__bottom">
+            <a href="#" class="btn btn-small">SAVE CHANGES
+              <svg class="arrow">
+                <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popups popup__additional-filters">
+      <div class="popup positionTop">
+        <div class="popup__head">
+          <h2 class="popup__head-title">Дополнительные фильтры</h2>
+          <button type="button" class="close"></button>
+        </div>
+        <form class="popup-content">
+          <div class="popup__section">
+            <label class="label-checkbox">
+              <input type="checkbox" class="checkbox">
+              <span class="check"></span>
+              <span class="check-text">Возможность отмены</span>
+            </label>
+            <label class="label-checkbox">
+              <input type="checkbox" class="checkbox">
+              <span class="check"></span>
+              <span class="check-text">Опытный хозяин
+                <span class="check-span"> Останавливайтесь у самых гостеприимных хозяев <a href="#"
+                    class="c-blue">Подробнее</a></span>
+              </span>
+            </label>
+          </div>
+          <div class="popup__section">
+            <h4 class="popup__title">Удобства</h4>
+            <div class="popup__row">
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Кухня</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Шампунь</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Отопление</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Кондиционер</span>
+              </label>
+            </div>
+            <a href="#" class="link-item">Все удобства
+              <svg class="arrow c-blue">
+                <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="popup__section">
+            <h4 class="popup__title">Дополнительные удобства</h4>
+            <div class="popup__row">
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Бесплатная <br>парковка</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Спортзал</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Джакузи</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="checkbox" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Бассейн</span>
+              </label>
+            </div>
+          </div>
+          <div class="popup__section">
+            <h4 class="popup__title">Цена</h4>
+            <div class="popup__row">
+              <div class="popup__price">
+                <p>От</p>
+                <input type="number" class="popup__input">
+              </div>
+              <div class="popup__price">
+                <p>До</p>
+                <input type="number" class="popup__input">
+              </div>
+
+            </div>
+          </div>
+          <div class="popup__section">
+            <h4 class="popup__title">Язык хозяина</h4>
+            <div class="popup__row">
+              <label class="label-checkbox">
+                <input type="radio" name="lang" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Английский</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="lang" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Французский</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="lang" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Немецкий</span>
+              </label>
+              <label class="label-checkbox">
+                <input type="radio" name="lang" class="checkbox">
+                <span class="check"></span>
+                <span class="check-text">Японский</span>
+              </label>
+            </div>
+            <a href="#" class="link-item">все языки
+              <svg class="arrow c-blue">
+                <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="popup__bottom popup__bottom__between">
+            <button type="reset" class="link-item">очистить <span class="close"></span></button>
+            <button type="submit" class="btn btn-small">показать варианты
+              <svg class="arrow">
+                <use xlink:href="img/sprite/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="error" id="error">
+    <div class="error__head">
+      <p class="text-15 c-blue">ОШИБКА title </p>
+      <button type="button" class="close"></button>
+    </div>
+    <ul class="error-list">
+      <li class="error-item">• Аккаунт с таким номер уже зарегестирован в системе. Если это ваш номер, вы
+        можете
+        <a href="#" class="error-link">восстановить аккунт здесь.</a>
+      </li>
+      <li class="error-item">• Длина пароля должна быть не менее 6 символов.</li>
+    </ul>
+  </div>
   </div>
 
 
@@ -430,15 +447,13 @@
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/jquery.min.js"></script>
   <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js">
   </script>
-  <script src="js/map__add__coordinats.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/common.js"></script>
   <!-- <script src="js/main.js"></script> -->
 
 </body>
+
 </html>

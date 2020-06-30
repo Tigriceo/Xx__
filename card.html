@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=400, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="/img/Xx..ico" type="image/x-icon">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/daterangepicker.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="fullcalendar/packages/core/main.css">
     <link rel="stylesheet" href="fullcalendar/packages/daygrid/main.css">
     <link rel="stylesheet" href="fullcalendar/packages/timegrid/main.css">
-    <link rel="stylesheet" href="css/daterangepicker.min.css">
+
 </head>
 
 <body>
@@ -109,9 +110,8 @@
                                 </a>
                                 <div class="slider">
                                     <div class="slider__item">
-                                        <img src="/content_img/main__img.svg" alt="slider">
+                                        <img src="/content_img/second__img3.svg" alt="slider">
                                     </div>
-
                                     <div class="slider__item">
                                         <img src="/content_img/second__img1.svg" alt="slider">
                                     </div>
@@ -121,7 +121,7 @@
                                     </div>
 
                                     <div class="slider__item">
-                                        <img src="/content_img/second__img3.svg" alt="slider">
+                                        <img src="/content_img/main__img.svg" alt="slider">
                                     </div>
 
                                     <div class="slider__item">
@@ -338,7 +338,6 @@
                         </div>
                         <div class="rememberthis">
                             <h3>Что нужно помнить</h3>
-
                             <div class="rememberthis__items">
                                 <div class="rememberthis__item">
                                     <span></span>
@@ -761,15 +760,10 @@
                             <div class="payment__form-content">
                                 <span class="like-btn like-btn_mb"></span>
                                 <form class="search-result">
-                                    <div class="search-result__item">
-                                        <span class="result__item-text">Прибытие и выезд</span>
-                                        <input class="search-result__input search-result__date search-result__item-drop"
-                                            value="10.10 - 20.10" required="">
-                                        <div class="dropdown__first calendar">
-                                            <div class="calendar__full">
-                                                <div id='calendar-two'></div>
-                                            </div>
-                                        </div>
+                                    <div class="field">
+                                        <p class="name">Прибытие и выезд</p>
+                                        <input type="text" class="input-date" name="daterange" value="10.10 - 20.10"
+                                            required="">
                                     </div>
                                     <div class="search-result__item">
                                         <span class="result__item-text">Гостей</span>
@@ -1316,6 +1310,21 @@
     <script src="js/common.js"></script>
     <script src="js/mask.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        let optionDate = {
+            opens: 'left',
+            autoUpdateInput: true,
+            startOfWeek: 'monday',
+            singleMonth: true,
+            showShortcuts: false,
+            // showTopbar: false,
+            autoApply: false,
+            format: "DD.MM"
+        }
+        $(function () {
+            $('input[name="daterange"]').dateRangePicker(optionDate);
+        });
+    </script>
 
 </body>
 

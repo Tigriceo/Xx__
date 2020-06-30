@@ -203,7 +203,23 @@
     letter-spacing: 0.02em;
     color: #414950;
 }
-.sleeping__arrangements-item.sleeping__arrangements-add{
+
+.count-plus,
+.count-minus {
+    transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+    -o-transition: ease-in 0.1s;
+}
+
+.count-plus:hover,
+.count-minus:hover {
+    background-color: #DEECFF;
+    transition: ease-in 0.1s;
+    -moz-transition: ease-in 0.1s;
+    -o-transition: ease-in 0.1s;
+}
+
+.sleeping__arrangements-item.sleeping__arrangements-add {
     border-top: 2px solid #EAF2FA;
 }
 
@@ -229,11 +245,35 @@
     font-weight: 400;
 }
 
+.adress__item-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
 /* второе__окно-конец */
 
 /* третье__окно-начало */
 .container__box .field.field-payment__theee {
     margin-bottom: -2px;
+}
+
+.adress__item {
+    position: relative;
+    margin-top: 50px;
+}
+
+.row__adress__item {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin: 30px 0;
+}
+
+.form-group input {
+    margin: 20px 0 10px 0;
 }
 
 .adress__item p {
@@ -248,6 +288,7 @@
 .main__map-pin {
     position: relative;
     z-index: 1;
+    margin-bottom: 55px;
 }
 
 #mapid {
@@ -261,25 +302,22 @@ textarea.form-control {
     height: 100px;
 }
 
-.adress__item {
-    padding-bottom: 130px;
+.container .leaflet-container {
+    font-family: "Gilroy-Regular", sans-serif;
 }
 
+.leaflet-pm-toolbar.leaflet-pm-edit.leaflet-bar.leaflet-control {
+    display: none;
+}
 
+.leaflet-pm-toolbar.leaflet-pm-draw.leaflet-bar.leaflet-control .button-container:nth-child(2) {
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.leaflet-pane.leaflet-overlay-pane g {
+    max-width: 32px !important;
+    max-height: 32px !important;
+}
 
 /* третье__окно-конец */
 
@@ -731,9 +769,6 @@ container__box-seven .days__plan input:focus {
     align-items: flex-start;
 }
 
-
-
-
 /* календарь */
 .calendar {
     padding-bottom: 30px;
@@ -835,12 +870,10 @@ container__box-seven .days__plan input:focus {
 .container__box-seven .btn__block {
     max-width: 555px;
 }
-
 /* седьмое__окно-конец */
 
-/* восьмое__окно-конец */
+/* восьмое__окно-начало */
 /* восьмое__окно-конец--левый_блок */
-
 .small__title h4 {
     font-family: "Gilroy-SemiBold", sans-serif;
     font-weight: 600;
@@ -1143,9 +1176,6 @@ container__box-seven .days__plan input:focus {
     border: 1px solid #fff;
 }
 
-
-
-
 /* восьмое__окно-конец */
 
 
@@ -1208,8 +1238,6 @@ container__box-seven .days__plan input:focus {
 .container__box .list__bt .num__text {
     margin-top: 6px;
 }
-
-
 /* девятое__окно-конец */
 
 @media only screen and (min-width: 768px) {
@@ -1234,7 +1262,6 @@ container__box-seven .days__plan input:focus {
 }
 
 @media only screen and (max-width: 768px) {
-
     /* 3 */
     .container__box-three .payment-row .field {
         width: 100%;
